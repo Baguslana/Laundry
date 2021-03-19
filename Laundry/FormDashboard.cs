@@ -25,33 +25,49 @@ namespace Laundry
             {
                 if (Session.getUserLogged().Rows[0].Field<string>("level") == "kasir")
                 {
-                    *//*btnpayments.Visible = false;
+                    //btnpayments.Visible = false;
 
-                    labelofficer.Visible = false;
-                    btnofficer.Visible = false;*//*
+                    
                 }
 
                 if (Session.getUserLogged().Rows[0].Field<string>("level") == "owner")
                 {
-                    *//*labelstudents.Visible = false;
-                    btnstudents.Visible = false;
-                    btnclass.Visible = false;
-
-                    btnpay.Text = "Riwayat Pembayaran";
-                    btnpayments.Visible = false;
-
-                    labelofficer.Visible = false;
-                    btnofficer.Visible = false;*//*
+                    //labelstudents.Visible = false;
+                    
                 }
             }*/
         }
 
-        private void Btn_Pengguna_Click(object sender, EventArgs e)
+        private void btnMember_Click(object sender, EventArgs e)
+        {
+            PanelMenu.Controls.Clear();
+            UserControl pelanggan = new UC_Pelanggan();
+            pelanggan.Dock = DockStyle.Fill;
+            PanelMenu.Controls.Add(pelanggan);
+        }
+
+        private void btnPengguna_Click(object sender, EventArgs e)
         {
             PanelMenu.Controls.Clear();
             UserControl pengguna = new UC_User();
             pengguna.Dock = DockStyle.Fill;
             PanelMenu.Controls.Add(pengguna);
+        }
+
+        private void btnOutlet_Click(object sender, EventArgs e)
+        {
+            PanelMenu.Controls.Clear();
+            UserControl outlet = new UC_Outlet();
+            outlet.Dock = DockStyle.Fill;
+            PanelMenu.Controls.Add(outlet);
+        }
+
+        private void btnPaket_Click(object sender, EventArgs e)
+        {
+            PanelMenu.Controls.Clear();
+            UserControl paket = new UC_Paket();
+            paket.Dock = DockStyle.Fill;
+            PanelMenu.Controls.Add(paket);
         }
     }
 }

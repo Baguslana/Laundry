@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Laundry.MenuTab
 {
-    public partial class Form_AddUser : Form
+    public partial class UC_Transaksi : UserControl
     {
-        public Form_AddUser()
+        public UC_Transaksi()
         {
             InitializeComponent();
         }

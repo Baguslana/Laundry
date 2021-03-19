@@ -10,76 +10,75 @@ using Luthor.lib;
 using System.Windows.Forms;
 using Laundry.MenuTab.FormPopup;
 
-
 namespace Laundry.MenuTab
 {
-    public partial class UC_User : UserControl
+    public partial class UC_Outlet : UserControl
     {
-        public UC_User()
+        public UC_Outlet()
         {
             InitializeComponent();
         }
 
-        private string getId;
+        private string getIdOutlet;
 
-        private void UserControl1_Load(object sender, EventArgs e)
+        private void UC_Outlet_Load(object sender, EventArgs e)
         {
-            readDataUser();
+            readDataOutlet();            
         }
 
-        private void readDataUser()
+        private void readDataOutlet()
         {
-            string query = "SELECT tb_user.*, tb_outlet.nama as namaOutlet FROM tb_user LEFT JOIN tb_outlet ON tb_user.id_outlet = tb_outlet.id";
+            string query = "SELECT * FROM tb_outlet";
             DataTable data = Db.Read(query);
-            dataTbUser.AutoGenerateColumns = false;
-            dataTbUser.DataSource = data;
+            dataTbOutlet.AutoGenerateColumns = false;
+            dataTbOutlet.DataSource = data;
         }
 
-        private void dataTbUser_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataTbOutlet_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int row = dataTbUser.CurrentCell.RowIndex;
-            getId = dataTbUser.Rows[row].Cells["ColumnId"].Value.ToString();
+            int row = dataTbOutlet.CurrentCell.RowIndex;
+            getIdOutlet = dataTbOutlet.Rows[row].Cells["ColumnId"].Value.ToString();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Form AddUser = new Form_AddUser(btnRefresh);
-            AddUser.ShowDialog();
+            Form AddOutlet = new Form_AddOutlet(btnRefresh);
+            AddOutlet.ShowDialog();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(getId))
+            if (!string.IsNullOrEmpty(getIdOutlet))
             {
-                Form EditUser = new Form_EditUser(getId, btnRefresh);
+                Form EditUser = new Form_EditOutlet(getIdOutlet, btnRefresh);
                 EditUser.ShowDialog();
             }
             else MessageBox.Show("Silahkan pilih data terlebih dahulu!", "PERHATIAN", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void deleteDataUser()
+        private void deleteDataOutlet()
         {
             var confirm = MessageBox.Show("Apakah anda yakin ingin Menghapus Data Ini?", "KONFIRMASI", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (confirm == DialogResult.Yes)
             {
-                Db.Delete("tb_user", $"id = {getId}");
+                Db.Delete("tb_outlet", $"id = {getIdOutlet}");
                 MessageBox.Show("Data berhasil dihapus");
-                readDataUser();
+                readDataOutlet();
             }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(getId))
+            if (!string.IsNullOrEmpty(getIdOutlet))
             {
-                deleteDataUser();
+                deleteDataOutlet();
             }
             else MessageBox.Show("Silahkan pilih data terlebih dahulu!", "PERHATIAN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            readDataUser();
-        }  
+            readDataOutlet();
+        }
     }
 }

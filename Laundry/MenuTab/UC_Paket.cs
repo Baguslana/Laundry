@@ -10,76 +10,74 @@ using Luthor.lib;
 using System.Windows.Forms;
 using Laundry.MenuTab.FormPopup;
 
-
 namespace Laundry.MenuTab
 {
-    public partial class UC_User : UserControl
+    public partial class UC_Paket : UserControl
     {
-        public UC_User()
+        public UC_Paket()
         {
             InitializeComponent();
         }
 
-        private string getId;
+        private string getIdPaket;
 
-        private void UserControl1_Load(object sender, EventArgs e)
+        private void UC_Paket_Load(object sender, EventArgs e)
         {
-            readDataUser();
+
         }
 
-        private void readDataUser()
+        private void readDataPaket()
         {
-            string query = "SELECT tb_user.*, tb_outlet.nama as namaOutlet FROM tb_user LEFT JOIN tb_outlet ON tb_user.id_outlet = tb_outlet.id";
+            string query = "SELECT * FROM tb_paket";
             DataTable data = Db.Read(query);
-            dataTbUser.AutoGenerateColumns = false;
-            dataTbUser.DataSource = data;
+            dataTbPaket.AutoGenerateColumns = false;
+            dataTbPaket.DataSource = data;
         }
 
-        private void dataTbUser_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataTbPaket_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int row = dataTbUser.CurrentCell.RowIndex;
-            getId = dataTbUser.Rows[row].Cells["ColumnId"].Value.ToString();
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Form AddUser = new Form_AddUser(btnRefresh);
-            AddUser.ShowDialog();
+            Form AddPaket = new Form_AddPaket(btnRefresh);
+            AddPaket.ShowDialog();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(getId))
+            if (!string.IsNullOrEmpty(getIdPaket))
             {
-                Form EditUser = new Form_EditUser(getId, btnRefresh);
-                EditUser.ShowDialog();
+                Form EditPaket = new Form_EditPaket(getIdPaket, btnRefresh);
+                EditPaket.ShowDialog();
             }
             else MessageBox.Show("Silahkan pilih data terlebih dahulu!", "PERHATIAN", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void deleteDataUser()
+        private void deleteDataPaket()
         {
             var confirm = MessageBox.Show("Apakah anda yakin ingin Menghapus Data Ini?", "KONFIRMASI", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (confirm == DialogResult.Yes)
             {
-                Db.Delete("tb_user", $"id = {getId}");
+                Db.Delete("tb_paket", $"id = {getIdPaket}");
                 MessageBox.Show("Data berhasil dihapus");
-                readDataUser();
+                readDataPaket();
             }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(getId))
+            if (!string.IsNullOrEmpty(getIdPaket))
             {
-                deleteDataUser();
+                deleteDataPaket();
             }
             else MessageBox.Show("Silahkan pilih data terlebih dahulu!", "PERHATIAN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            readDataUser();
-        }  
+            readDataPaket();
+        }
     }
 }

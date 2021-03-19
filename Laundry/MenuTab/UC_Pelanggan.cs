@@ -10,49 +10,48 @@ using Luthor.lib;
 using System.Windows.Forms;
 using Laundry.MenuTab.FormPopup;
 
-
 namespace Laundry.MenuTab
 {
-    public partial class UC_User : UserControl
+    public partial class UC_Pelanggan : UserControl
     {
-        public UC_User()
+        public UC_Pelanggan()
         {
             InitializeComponent();
         }
 
-        private string getId;
+        private string getIdPelanggan;
 
-        private void UserControl1_Load(object sender, EventArgs e)
+        private void UC_Member_Load(object sender, EventArgs e)
         {
-            readDataUser();
+            readDataMember();
         }
 
-        private void readDataUser()
+        private void readDataMember()
         {
-            string query = "SELECT tb_user.*, tb_outlet.nama as namaOutlet FROM tb_user LEFT JOIN tb_outlet ON tb_user.id_outlet = tb_outlet.id";
+            string query = "SELECT * FROM tb_member";
             DataTable data = Db.Read(query);
-            dataTbUser.AutoGenerateColumns = false;
-            dataTbUser.DataSource = data;
+            dataTbMember.AutoGenerateColumns = false;
+            dataTbMember.DataSource = data;
         }
 
-        private void dataTbUser_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataTbMember_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int row = dataTbUser.CurrentCell.RowIndex;
-            getId = dataTbUser.Rows[row].Cells["ColumnId"].Value.ToString();
+            int row = dataTbMember.CurrentCell.RowIndex;
+            getIdPelanggan = dataTbMember.Rows[row].Cells["ColumnId"].Value.ToString();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Form AddUser = new Form_AddUser(btnRefresh);
-            AddUser.ShowDialog();
+            Form AddPelanggan = new Form_AddPelanggan();
+            AddPelanggan.ShowDialog();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(getId))
+            if (!string.IsNullOrEmpty(getIdPelanggan))
             {
-                Form EditUser = new Form_EditUser(getId, btnRefresh);
-                EditUser.ShowDialog();
+                Form EditPelanggan = new Form_EditPelanggan(getIdPelanggan, btnRefresh);
+                EditPelanggan.ShowDialog();
             }
             else MessageBox.Show("Silahkan pilih data terlebih dahulu!", "PERHATIAN", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -62,15 +61,15 @@ namespace Laundry.MenuTab
             var confirm = MessageBox.Show("Apakah anda yakin ingin Menghapus Data Ini?", "KONFIRMASI", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (confirm == DialogResult.Yes)
             {
-                Db.Delete("tb_user", $"id = {getId}");
+                Db.Delete("tb_member", $"id = {getIdPelanggan}");
                 MessageBox.Show("Data berhasil dihapus");
-                readDataUser();
+                readDataMember();
             }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(getId))
+            if (!string.IsNullOrEmpty(getIdPelanggan))
             {
                 deleteDataUser();
             }
@@ -79,7 +78,7 @@ namespace Laundry.MenuTab
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            readDataUser();
-        }  
+            readDataMember();
+        }
     }
 }

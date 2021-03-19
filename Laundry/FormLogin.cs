@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Luthor.lib;
+using Luthor.lib.Encryption;
 using System.Windows.Forms;
 
 namespace Laundry
@@ -22,7 +23,7 @@ namespace Laundry
         {
             if (txtUsername.Text.Length > 0 && txtPassword.Text.Length > 0)
             {
-                if (Auth.Login(txtUsername.Text, txtPassword.Text, "tb_user"))
+                if (Auth.Login(txtUsername.Text, Sha256.Encrypt(txtPassword.Text), "tb_user"))
                 {
                     Form Dashboard = new FormDashboard();
                     this.Hide();
@@ -34,10 +35,7 @@ namespace Laundry
                     txtPassword.Focus();
                 }
             }
-            else if (txtUsername.Text.Length == 0 && txtPassword.Text.Length == 0)
-            {
-                MessageBox.Show("Masukan username dan password", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            else if (txtUsername.Text.Length == 0 && txtPassword.Text.Length == 0) MessageBox.Show("Masukan username dan password", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (txtUsername.Text.Length == 0)
             {
                 MessageBox.Show("Masukan username", "",MessageBoxButtons.OK, MessageBoxIcon.Warning);

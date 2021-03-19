@@ -70,10 +70,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label3.Location = new System.Drawing.Point(58, 130);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(395, 38);
+            this.label3.Size = new System.Drawing.Size(383, 19);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Student can only view transaction history. Do not try use\r\nsomeone else account f" +
-    "or personal gain";
+            this.label3.Text = "Do not try use someone else account for personal gain";
             this.label3.Visible = false;
             // 
             // label4
@@ -158,6 +157,7 @@
             this.label6.Size = new System.Drawing.Size(96, 20);
             this.label6.TabIndex = 16;
             this.label6.Text = "Copyright ©";
+            this.label6.Visible = false;
             // 
             // label10
             // 
@@ -172,6 +172,7 @@
             this.label10.Size = new System.Drawing.Size(42, 20);
             this.label10.TabIndex = 17;
             this.label10.Text = "Yasa";
+            this.label10.Visible = false;
             // 
             // label11
             // 
@@ -182,6 +183,7 @@
             this.label11.Size = new System.Drawing.Size(81, 20);
             this.label11.TabIndex = 18;
             this.label11.Text = "• XII RPL 2";
+            this.label11.Visible = false;
             // 
             // gunaLabel1
             // 

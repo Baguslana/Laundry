@@ -51,7 +51,8 @@
     <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
     </Reference>
-    <Reference Include="Luthor.lib">
+    <Reference Include="Luthor.lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Luthor.lib.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
@@ -123,11 +124,77 @@
     <Compile Include="Masuk.Designer.cs">
       <DependentUpon>Masuk.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuTab\Form_AddUser.cs">
+    <Compile Include="MenuTab\FormPopup\Form_AddOutlet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuTab\Form_AddUser.Designer.cs">
+    <Compile Include="MenuTab\FormPopup\Form_AddOutlet.Designer.cs">
+      <DependentUpon>Form_AddOutlet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_AddPaket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_AddPaket.Designer.cs">
+      <DependentUpon>Form_AddPaket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_AddPelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_AddPelanggan.Designer.cs">
+      <DependentUpon>Form_AddPelanggan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_AddUser.Designer.cs">
       <DependentUpon>Form_AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_EditOutlet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_EditOutlet.Designer.cs">
+      <DependentUpon>Form_EditOutlet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_EditPaket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_EditPaket.Designer.cs">
+      <DependentUpon>Form_EditPaket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_EditPelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_EditPelanggan.Designer.cs">
+      <DependentUpon>Form_EditPelanggan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_EditUser.Designer.cs">
+      <DependentUpon>Form_EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTab\UC_Pelanggan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuTab\UC_Pelanggan.Designer.cs">
+      <DependentUpon>UC_Pelanggan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTab\UC_Outlet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuTab\UC_Outlet.Designer.cs">
+      <DependentUpon>UC_Outlet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTab\UC_Paket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuTab\UC_Paket.Designer.cs">
+      <DependentUpon>UC_Paket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTab\UC_Transaksi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuTab\UC_Transaksi.Designer.cs">
+      <DependentUpon>UC_Transaksi.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuTab\UC_User.cs">
       <SubType>UserControl</SubType>
@@ -146,8 +213,35 @@
     <EmbeddedResource Include="Masuk.resx">
       <DependentUpon>Masuk.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuTab\Form_AddUser.resx">
+    <EmbeddedResource Include="MenuTab\FormPopup\Form_AddOutlet.resx">
+      <DependentUpon>Form_AddOutlet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTab\FormPopup\Form_AddPaket.resx">
+      <DependentUpon>Form_AddPaket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTab\FormPopup\Form_AddPelanggan.resx">
+      <DependentUpon>Form_AddPelanggan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTab\FormPopup\Form_AddUser.resx">
       <DependentUpon>Form_AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTab\FormPopup\Form_EditOutlet.resx">
+      <DependentUpon>Form_EditOutlet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTab\FormPopup\Form_EditPelanggan.resx">
+      <DependentUpon>Form_EditPelanggan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTab\FormPopup\Form_EditUser.resx">
+      <DependentUpon>Form_EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTab\UC_Paket.resx">
+      <DependentUpon>UC_Paket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTab\UC_Pelanggan.resx">
+      <DependentUpon>UC_Pelanggan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTab\UC_Outlet.resx">
+      <DependentUpon>UC_Outlet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuTab\UC_User.resx">
       <DependentUpon>UC_User.cs</DependentUpon>

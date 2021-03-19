@@ -1,6 +1,6 @@
 ﻿namespace Laundry.MenuTab
 {
-    partial class UC_User
+    partial class UC_Transaksi
     {
         /// <summary> 
         /// Required designer variable.
@@ -117,7 +117,6 @@
             this.dataTbUser.ThemeStyle.RowsStyle.Height = 24;
             this.dataTbUser.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataTbUser.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dataTbUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTbUser_CellClick);
             // 
             // btnAdd
             // 
@@ -148,7 +147,6 @@
             this.btnAdd.Size = new System.Drawing.Size(121, 42);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Tambah";
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // panel1
             // 
@@ -186,7 +184,6 @@
             this.btnEdit.Size = new System.Drawing.Size(121, 42);
             this.btnEdit.TabIndex = 4;
             this.btnEdit.Text = "Edit";
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
@@ -217,7 +214,6 @@
             this.btnDelete.Size = new System.Drawing.Size(121, 42);
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "Hapus";
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnRefresh
             // 
@@ -249,7 +245,6 @@
             this.btnRefresh.TabIndex = 6;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.Visible = false;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // ColumnId
             // 
@@ -313,10 +308,8 @@
             this.Controls.Add(this.dataTbUser);
             this.Name = "UC_User";
             this.Size = new System.Drawing.Size(1022, 673);
-            this.Load += new System.EventHandler(this.UserControl1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataTbUser)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion
