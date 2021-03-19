@@ -43,7 +43,9 @@
             this.cmbOutlet = new Guna.UI.WinForms.GunaComboBox();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.btnTambah = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnGambar = new Guna.UI.WinForms.GunaButton();
+            this.btnIcon = new Guna.UI.WinForms.GunaButton();
+            this.picIcon = new Guna.UI.WinForms.GunaPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // panelsamping
@@ -224,29 +226,38 @@
             this.btnTambah.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
             // 
-            // btnGambar
+            // btnIcon
             // 
-            this.btnGambar.AnimationHoverSpeed = 0.07F;
-            this.btnGambar.AnimationSpeed = 0.03F;
-            this.btnGambar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnGambar.BorderColor = System.Drawing.Color.Black;
-            this.btnGambar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnGambar.FocusedColor = System.Drawing.Color.Empty;
-            this.btnGambar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnGambar.ForeColor = System.Drawing.Color.White;
-            this.btnGambar.Image = ((System.Drawing.Image)(resources.GetObject("btnGambar.Image")));
-            this.btnGambar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnGambar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnGambar.Location = new System.Drawing.Point(37, 356);
-            this.btnGambar.Name = "btnGambar";
-            this.btnGambar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnGambar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnGambar.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnGambar.OnHoverImage = null;
-            this.btnGambar.OnPressedColor = System.Drawing.Color.Black;
-            this.btnGambar.Size = new System.Drawing.Size(50, 50);
-            this.btnGambar.TabIndex = 21;
-            this.btnGambar.Click += new System.EventHandler(this.btnGambar_Click);
+            this.btnIcon.AnimationHoverSpeed = 0.07F;
+            this.btnIcon.AnimationSpeed = 0.03F;
+            this.btnIcon.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnIcon.BorderColor = System.Drawing.Color.Black;
+            this.btnIcon.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnIcon.FocusedColor = System.Drawing.Color.Empty;
+            this.btnIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnIcon.ForeColor = System.Drawing.Color.White;
+            this.btnIcon.Image = ((System.Drawing.Image)(resources.GetObject("btnIcon.Image")));
+            this.btnIcon.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnIcon.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnIcon.Location = new System.Drawing.Point(37, 356);
+            this.btnIcon.Name = "btnIcon";
+            this.btnIcon.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnIcon.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnIcon.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnIcon.OnHoverImage = null;
+            this.btnIcon.OnPressedColor = System.Drawing.Color.Black;
+            this.btnIcon.Size = new System.Drawing.Size(50, 50);
+            this.btnIcon.TabIndex = 21;
+            this.btnIcon.Click += new System.EventHandler(this.btnIcon_Click);
+            // 
+            // picIcon
+            // 
+            this.picIcon.BaseColor = System.Drawing.Color.White;
+            this.picIcon.Location = new System.Drawing.Point(107, 356);
+            this.picIcon.Name = "picIcon";
+            this.picIcon.Size = new System.Drawing.Size(50, 50);
+            this.picIcon.TabIndex = 22;
+            this.picIcon.TabStop = false;
             // 
             // Form_AddPaket
             // 
@@ -254,7 +265,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(410, 530);
-            this.Controls.Add(this.btnGambar);
+            this.Controls.Add(this.picIcon);
+            this.Controls.Add(this.btnIcon);
             this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.gunaButton1);
             this.Controls.Add(this.cmbOutlet);
@@ -274,6 +286,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form_AddUser";
             this.Load += new System.EventHandler(this.Form_AddPaket_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,7 +307,8 @@
         private Guna.UI.WinForms.GunaComboBox cmbOutlet;
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private Guna.UI.WinForms.GunaAdvenceButton btnTambah;
-        private Guna.UI.WinForms.GunaButton btnGambar;
+        private Guna.UI.WinForms.GunaButton btnIcon;
+        private Guna.UI.WinForms.GunaPictureBox picIcon;
     }
 }
       

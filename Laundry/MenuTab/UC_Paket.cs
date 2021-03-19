@@ -23,12 +23,12 @@ namespace Laundry.MenuTab
 
         private void UC_Paket_Load(object sender, EventArgs e)
         {
-
+            readDataPaket();
         }
 
         private void readDataPaket()
         {
-            string query = "SELECT * FROM tb_paket";
+            string query = "SELECT * FROM tb_paket LEFT JOIN tb_jenis ON tb_paket.id_jenis = tb_jenis.id LEFT JOIN tb_outlet ON tb_paket.id_outlet = tb_outlet.id ORDER BY tb_paket.id DESC";
             DataTable data = Db.Read(query);
             dataTbPaket.AutoGenerateColumns = false;
             dataTbPaket.DataSource = data;
@@ -36,21 +36,26 @@ namespace Laundry.MenuTab
 
         private void dataTbPaket_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            int row = dataTbPaket.CurrentCell.RowIndex;
+            getIdPaket = dataTbPaket.Rows[row].Cells["ColumnId"].Value.ToString();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Form AddPaket = new Form_AddPaket(btnRefresh);
-            AddPaket.ShowDialog();
+            /*Form AddPaket = new Form_AddPaket(btnRefresh);
+            AddPaket.ShowDialog();*/
+
+            new Form_AddPaket(btnRefresh).ShowDialog();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(getIdPaket))
             {
-                Form EditPaket = new Form_EditPaket(getIdPaket, btnRefresh);
-                EditPaket.ShowDialog();
+                /*Form EditPaket = new Form_EditPaket(getIdPaket, btnRefresh);
+                EditPaket.ShowDialog();*/
+
+                new Form_EditPaket(getIdPaket, btnRefresh).ShowDialog();
             }
             else MessageBox.Show("Silahkan pilih data terlebih dahulu!", "PERHATIAN", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }

@@ -42,7 +42,7 @@ namespace Laundry.MenuTab
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Form AddPelanggan = new Form_AddPelanggan();
+            Form AddPelanggan = new Form_AddPelanggan(btnRefresh);
             AddPelanggan.ShowDialog();
         }
 

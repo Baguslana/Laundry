@@ -74,7 +74,7 @@ namespace Laundry.MenuTab.FormPopup
             }
         }
 
-        private void btnGambar_Click(object sender, EventArgs e)
+        private void btnIcon_Click(object sender, EventArgs e)
         {
             OpenFileDialog browse = new OpenFileDialog();
             browse.Title = "Cari Gambar";

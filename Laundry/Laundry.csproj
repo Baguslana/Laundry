@@ -228,6 +228,9 @@
     <EmbeddedResource Include="MenuTab\FormPopup\Form_EditOutlet.resx">
       <DependentUpon>Form_EditOutlet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuTab\FormPopup\Form_EditPaket.resx">
+      <DependentUpon>Form_EditPaket.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuTab\FormPopup\Form_EditPelanggan.resx">
       <DependentUpon>Form_EditPelanggan.cs</DependentUpon>
     </EmbeddedResource>
