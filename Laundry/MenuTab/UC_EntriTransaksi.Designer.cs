@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_EntriTransaksi));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.flPaket = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
@@ -75,7 +75,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.labelPaketCucian = new System.Windows.Forms.Label();
+            this.labelHargaCucian = new System.Windows.Forms.Label();
             this.labelDiskon = new System.Windows.Forms.Label();
             this.labelPajak = new System.Windows.Forms.Label();
             this.labelBiayaTambahan = new System.Windows.Forms.Label();
@@ -87,6 +87,7 @@
             this.btnDiskon = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnPajak = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnBiayaTambahan = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnTambah = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.gunaGroupBox1.SuspendLayout();
@@ -170,6 +171,7 @@
             this.txtPaket.PasswordChar = '\0';
             this.txtPaket.Size = new System.Drawing.Size(250, 32);
             this.txtPaket.TabIndex = 8;
+            this.txtPaket.TextChanged += new System.EventHandler(this.txtPaket_TextChanged);
             // 
             // panel2
             // 
@@ -306,6 +308,8 @@
             this.txtDiskon.PasswordChar = '\0';
             this.txtDiskon.Size = new System.Drawing.Size(250, 32);
             this.txtDiskon.TabIndex = 17;
+            this.txtDiskon.TextChanged += new System.EventHandler(this.txtDiskon_TextChanged);
+            this.txtDiskon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiskon_KeyPress);
             // 
             // label4
             // 
@@ -330,6 +334,8 @@
             this.txtPajak.PasswordChar = '\0';
             this.txtPajak.Size = new System.Drawing.Size(250, 32);
             this.txtPajak.TabIndex = 19;
+            this.txtPajak.TextChanged += new System.EventHandler(this.txtPajak_TextChanged);
+            this.txtPajak.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPajak_KeyPress);
             // 
             // label5
             // 
@@ -354,6 +360,8 @@
             this.txtBiayaTambahan.PasswordChar = '\0';
             this.txtBiayaTambahan.Size = new System.Drawing.Size(250, 32);
             this.txtBiayaTambahan.TabIndex = 17;
+            this.txtBiayaTambahan.TextChanged += new System.EventHandler(this.txtBiayaTambahan_TextChanged);
+            this.txtBiayaTambahan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBiayaTambahan_KeyPress);
             // 
             // label6
             // 
@@ -542,49 +550,48 @@
             // dataTableEntriTransaksi
             // 
             this.dataTableEntriTransaksi.AllowUserToAddRows = false;
-            this.dataTableEntriTransaksi.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dataTableEntriTransaksi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
+            this.dataTableEntriTransaksi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
             this.dataTableEntriTransaksi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataTableEntriTransaksi.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataTableEntriTransaksi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataTableEntriTransaksi.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataTableEntriTransaksi.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataTableEntriTransaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataTableEntriTransaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.dataTableEntriTransaksi.ColumnHeadersHeight = 27;
             this.dataTableEntriTransaksi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnPaket,
             this.ColumnQty,
             this.ColumnHarga,
             this.ColumnAction});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataTableEntriTransaksi.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataTableEntriTransaksi.DefaultCellStyle = dataGridViewCellStyle19;
             this.dataTableEntriTransaksi.EnableHeadersVisualStyles = false;
             this.dataTableEntriTransaksi.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataTableEntriTransaksi.Location = new System.Drawing.Point(3, 48);
             this.dataTableEntriTransaksi.Name = "dataTableEntriTransaksi";
             this.dataTableEntriTransaksi.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataTableEntriTransaksi.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataTableEntriTransaksi.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dataTableEntriTransaksi.RowHeadersVisible = false;
             this.dataTableEntriTransaksi.RowHeadersWidth = 51;
             this.dataTableEntriTransaksi.RowTemplate.Height = 24;
@@ -613,6 +620,9 @@
             this.dataTableEntriTransaksi.ThemeStyle.RowsStyle.Height = 24;
             this.dataTableEntriTransaksi.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataTableEntriTransaksi.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataTableEntriTransaksi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTableEntriTransaksi_CellContentClick);
+            this.dataTableEntriTransaksi.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataTableEntriTransaksi_RowsAdded);
+            this.dataTableEntriTransaksi.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dataTableEntriTransaksi_RowsRemoved);
             // 
             // ColumnPaket
             // 
@@ -650,7 +660,7 @@
             this.tableLayoutPanel1.Controls.Add(this.labelBiayaTambahan, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.labelPajak, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.labelDiskon, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.labelPaketCucian, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.labelHargaCucian, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label13, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label10, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label11, 0, 2);
@@ -724,16 +734,16 @@
             this.label14.Text = "Biaya Tambahan";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // labelPaketCucian
+            // labelHargaCucian
             // 
-            this.labelPaketCucian.AutoSize = true;
-            this.labelPaketCucian.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelPaketCucian.Location = new System.Drawing.Point(152, 0);
-            this.labelPaketCucian.Name = "labelPaketCucian";
-            this.labelPaketCucian.Size = new System.Drawing.Size(143, 27);
-            this.labelPaketCucian.TabIndex = 25;
-            this.labelPaketCucian.Text = "0";
-            this.labelPaketCucian.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelHargaCucian.AutoSize = true;
+            this.labelHargaCucian.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelHargaCucian.Location = new System.Drawing.Point(152, 0);
+            this.labelHargaCucian.Name = "labelHargaCucian";
+            this.labelHargaCucian.Size = new System.Drawing.Size(143, 27);
+            this.labelHargaCucian.TabIndex = 25;
+            this.labelHargaCucian.Text = "0";
+            this.labelHargaCucian.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelDiskon
             // 
@@ -977,10 +987,45 @@
             this.btnBiayaTambahan.Size = new System.Drawing.Size(32, 32);
             this.btnBiayaTambahan.TabIndex = 22;
             // 
+            // btnTambah
+            // 
+            this.btnTambah.AnimationHoverSpeed = 0.07F;
+            this.btnTambah.AnimationSpeed = 0.03F;
+            this.btnTambah.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnTambah.BorderColor = System.Drawing.Color.Black;
+            this.btnTambah.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnTambah.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnTambah.CheckedForeColor = System.Drawing.Color.White;
+            this.btnTambah.CheckedImage = null;
+            this.btnTambah.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnTambah.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnTambah.FocusedColor = System.Drawing.Color.Empty;
+            this.btnTambah.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTambah.ForeColor = System.Drawing.Color.White;
+            this.btnTambah.Image = null;
+            this.btnTambah.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnTambah.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnTambah.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnTambah.Location = new System.Drawing.Point(878, 619);
+            this.btnTambah.Name = "btnTambah";
+            this.btnTambah.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnTambah.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnTambah.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnTambah.OnHoverImage = null;
+            this.btnTambah.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnTambah.OnPressedColor = System.Drawing.Color.Black;
+            this.btnTambah.Size = new System.Drawing.Size(120, 42);
+            this.btnTambah.TabIndex = 23;
+            this.btnTambah.Text = "Tambah";
+            this.btnTambah.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnTambah.Visible = false;
+            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
+            // 
             // UC_EntriTransaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.txtIdPelanggan);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -1053,7 +1098,7 @@
         private System.Windows.Forms.Label labelBiayaTambahan;
         private System.Windows.Forms.Label labelPajak;
         private System.Windows.Forms.Label labelDiskon;
-        private System.Windows.Forms.Label labelPaketCucian;
+        private System.Windows.Forms.Label labelHargaCucian;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label14;
@@ -1065,5 +1110,6 @@
         private Guna.UI.WinForms.GunaAdvenceButton btnPajak;
         private Guna.UI.WinForms.GunaAdvenceButton btnDiskon;
         private Guna.UI.WinForms.GunaAdvenceButton btnCariPelanggan;
+        private Guna.UI.WinForms.GunaAdvenceButton btnTambah;
     }
 }

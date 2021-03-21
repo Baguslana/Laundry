@@ -28,20 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelsamping = new System.Windows.Forms.Panel();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
-            this.btnTambah = new Guna.UI.WinForms.GunaAdvenceButton();
             this.dataTbPelanggan = new Guna.UI.WinForms.GunaDataGridView();
-            this.txtJenisPaket = new System.Windows.Forms.TextBox();
-            this.paneltxt = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnRefresh = new Guna.UI.WinForms.GunaAdvenceButton();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPelanggan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnPilih = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.txtCariPelanggan = new Guna.UI.WinForms.GunaLineTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataTbPelanggan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,71 +77,38 @@
             this.gunaButton1.Text = "Tabel Pelanggan";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btnTambah
-            // 
-            this.btnTambah.AnimationHoverSpeed = 0.07F;
-            this.btnTambah.AnimationSpeed = 0.03F;
-            this.btnTambah.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnTambah.BorderColor = System.Drawing.Color.Black;
-            this.btnTambah.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnTambah.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnTambah.CheckedForeColor = System.Drawing.Color.White;
-            this.btnTambah.CheckedImage = null;
-            this.btnTambah.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnTambah.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnTambah.FocusedColor = System.Drawing.Color.Empty;
-            this.btnTambah.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTambah.ForeColor = System.Drawing.Color.White;
-            this.btnTambah.Image = null;
-            this.btnTambah.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnTambah.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnTambah.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnTambah.Location = new System.Drawing.Point(278, 95);
-            this.btnTambah.Name = "btnTambah";
-            this.btnTambah.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnTambah.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnTambah.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnTambah.OnHoverImage = null;
-            this.btnTambah.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnTambah.OnPressedColor = System.Drawing.Color.Black;
-            this.btnTambah.Size = new System.Drawing.Size(120, 42);
-            this.btnTambah.TabIndex = 20;
-            this.btnTambah.Text = "Tambah";
-            this.btnTambah.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnTambah.Visible = false;
-            // 
             // dataTbPelanggan
             // 
             this.dataTbPelanggan.AllowUserToAddRows = false;
             this.dataTbPelanggan.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dataTbPelanggan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dataTbPelanggan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataTbPelanggan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataTbPelanggan.BackgroundColor = System.Drawing.Color.White;
             this.dataTbPelanggan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataTbPelanggan.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataTbPelanggan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataTbPelanggan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataTbPelanggan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataTbPelanggan.ColumnHeadersHeight = 27;
             this.dataTbPelanggan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataTbPelanggan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnId,
             this.ColumnPelanggan});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataTbPelanggan.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataTbPelanggan.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataTbPelanggan.EnableHeadersVisualStyles = false;
             this.dataTbPelanggan.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataTbPelanggan.Location = new System.Drawing.Point(31, 152);
@@ -178,35 +143,8 @@
             this.dataTbPelanggan.ThemeStyle.RowsStyle.Height = 24;
             this.dataTbPelanggan.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataTbPelanggan.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataTbPelanggan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTbPelanggan_CellClick);
             this.dataTbPelanggan.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTbPelanggan_CellDoubleClick);
-            // 
-            // txtJenisPaket
-            // 
-            this.txtJenisPaket.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtJenisPaket.Location = new System.Drawing.Point(12, 113);
-            this.txtJenisPaket.Name = "txtJenisPaket";
-            this.txtJenisPaket.Size = new System.Drawing.Size(260, 15);
-            this.txtJenisPaket.TabIndex = 35;
-            this.txtJenisPaket.Visible = false;
-            // 
-            // paneltxt
-            // 
-            this.paneltxt.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.paneltxt.Location = new System.Drawing.Point(12, 134);
-            this.paneltxt.Name = "paneltxt";
-            this.paneltxt.Size = new System.Drawing.Size(260, 1);
-            this.paneltxt.TabIndex = 34;
-            this.paneltxt.Visible = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 93);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 17);
-            this.label1.TabIndex = 33;
-            this.label1.Text = "Nama";
-            this.label1.Visible = false;
             // 
             // btnRefresh
             // 
@@ -290,19 +228,40 @@
             this.btnPilih.Visible = false;
             this.btnPilih.Click += new System.EventHandler(this.btnPilih_Click);
             // 
+            // txtCariPelanggan
+            // 
+            this.txtCariPelanggan.BackColor = System.Drawing.Color.White;
+            this.txtCariPelanggan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCariPelanggan.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtCariPelanggan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCariPelanggan.LineColor = System.Drawing.Color.Gainsboro;
+            this.txtCariPelanggan.Location = new System.Drawing.Point(31, 106);
+            this.txtCariPelanggan.Name = "txtCariPelanggan";
+            this.txtCariPelanggan.PasswordChar = '\0';
+            this.txtCariPelanggan.Size = new System.Drawing.Size(348, 30);
+            this.txtCariPelanggan.TabIndex = 38;
+            this.txtCariPelanggan.TextChanged += new System.EventHandler(this.txtCariPelanggan_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(28, 86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(33, 17);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "Cari";
+            // 
             // Form_Pelanggan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(410, 530);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtCariPelanggan);
             this.Controls.Add(this.btnPilih);
             this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.txtJenisPaket);
-            this.Controls.Add(this.paneltxt);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataTbPelanggan);
-            this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.gunaButton1);
             this.Controls.Add(this.panelsamping);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -319,14 +278,12 @@
         #endregion
         private System.Windows.Forms.Panel panelsamping;
         private Guna.UI.WinForms.GunaButton gunaButton1;
-        private Guna.UI.WinForms.GunaAdvenceButton btnTambah;
         private Guna.UI.WinForms.GunaDataGridView dataTbPelanggan;
-        private System.Windows.Forms.TextBox txtJenisPaket;
-        private System.Windows.Forms.Panel paneltxt;
-        private System.Windows.Forms.Label label1;
         private Guna.UI.WinForms.GunaAdvenceButton btnRefresh;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPelanggan;
         private Guna.UI.WinForms.GunaAdvenceButton btnPilih;
+        private Guna.UI.WinForms.GunaLineTextBox txtCariPelanggan;
+        private System.Windows.Forms.Label label1;
     }
 }
