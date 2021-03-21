@@ -124,6 +124,12 @@
     <Compile Include="Masuk.Designer.cs">
       <DependentUpon>Masuk.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_AddJenis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_AddJenis.Designer.cs">
+      <DependentUpon>Form_AddJenis.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuTab\FormPopup\Form_AddOutlet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,24 @@
     <Compile Include="MenuTab\FormPopup\Form_EditUser.Designer.cs">
       <DependentUpon>Form_EditUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_JenisPaket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_JenisPaket.Designer.cs">
+      <DependentUpon>Form_JenisPaket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_Pelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuTab\FormPopup\Form_Pelanggan.Designer.cs">
+      <DependentUpon>Form_Pelanggan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTab\UC_EntriTransaksi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuTab\UC_EntriTransaksi.Designer.cs">
+      <DependentUpon>UC_EntriTransaksi.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuTab\UC_Pelanggan.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -213,6 +237,9 @@
     <EmbeddedResource Include="Masuk.resx">
       <DependentUpon>Masuk.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuTab\FormPopup\Form_AddJenis.resx">
+      <DependentUpon>Form_AddJenis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuTab\FormPopup\Form_AddOutlet.resx">
       <DependentUpon>Form_AddOutlet.cs</DependentUpon>
     </EmbeddedResource>
@@ -236,6 +263,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuTab\FormPopup\Form_EditUser.resx">
       <DependentUpon>Form_EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTab\FormPopup\Form_JenisPaket.resx">
+      <DependentUpon>Form_JenisPaket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTab\FormPopup\Form_Pelanggan.resx">
+      <DependentUpon>Form_Pelanggan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTab\UC_EntriTransaksi.resx">
+      <DependentUpon>UC_EntriTransaksi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuTab\UC_Paket.resx">
       <DependentUpon>UC_Paket.cs</DependentUpon>

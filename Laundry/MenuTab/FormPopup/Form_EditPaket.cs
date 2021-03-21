@@ -28,8 +28,8 @@ namespace Laundry.MenuTab.FormPopup
         private void Form_EditPaket_Load(object sender, EventArgs e)
         {
             DataTable dataEdit = Db.Read("tb_paket", "*", $"id = {getIdPaket}");
-            txtNamaPaket.Text = dataEdit.Rows[0].Field<string>("nama");
-            txtHarga.Text = dataEdit.Rows[0].Field<string>("harga");
+            txtNamaPaket.Text = dataEdit.Rows[0].Field<string>("nama_paket");
+            txtHarga.Text = dataEdit.Rows[0].Field<int>("harga").ToString();
 
             //Outlet
             cmbOutlet.DataSource = Db.Read("tb_outlet", "*");
@@ -58,15 +58,15 @@ namespace Laundry.MenuTab.FormPopup
             {
                 var namapaket = txtNamaPaket.Text;
                 var harga = txtHarga.Text;
-                var jenispaket = cmbJenisPaket.Text;
+                var jenispaket = cmbJenisPaket.SelectedValue;
                 var outlet = cmbOutlet.SelectedValue.ToString();
-                if (Db.Update("tb_paket", $"nama_paket = '{namapaket}', harga = '{harga}', id_jenis = '{jenispaket}', id_outlet = '{outlet}', icon = '{gambar}'", $"id = {getIdPaket}"))
+                if (Db.Update("tb_paket", $"nama_paket = '{namapaket}', harga = '{harga}', id_jenis = '{jenispaket}', id_outlet = '{outlet}', icon = {gambar}", $"id = {getIdPaket}"))
                 {
                     MessageBox.Show("Data berhasil diubah");
                     btrf.PerformClick();
                     this.Hide();
                 }
-                else MessageBox.Show($"Gagal mengubah User. \n\n ERROR MESSAGE: \n {Error.error_msg}", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else MessageBox.Show($"Gagal mengubah paket. \n\n ERROR MESSAGE: \n {Error.error_msg}", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

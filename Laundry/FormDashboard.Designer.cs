@@ -36,14 +36,14 @@
             this.btnMember = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnOutlet = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnPaket = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnJenisPaket = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnPengguna = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnTransaksi = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnEntriTransaksi = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnLaporan = new Guna.UI.WinForms.GunaAdvenceButton();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.PanelMenu = new Guna.UI.WinForms.GunaPanel();
+            this.btnDataTransaksi = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -66,7 +66,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.LightGray;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.panel4.Controls.Add(this.gunaAdvenceButton8);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 590);
@@ -106,13 +106,13 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.LightGray;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.flowLayoutPanel1.Controls.Add(this.btnMember);
             this.flowLayoutPanel1.Controls.Add(this.btnOutlet);
             this.flowLayoutPanel1.Controls.Add(this.btnPaket);
-            this.flowLayoutPanel1.Controls.Add(this.btnJenisPaket);
             this.flowLayoutPanel1.Controls.Add(this.btnPengguna);
-            this.flowLayoutPanel1.Controls.Add(this.btnTransaksi);
+            this.flowLayoutPanel1.Controls.Add(this.btnEntriTransaksi);
+            this.flowLayoutPanel1.Controls.Add(this.btnDataTransaksi);
             this.flowLayoutPanel1.Controls.Add(this.btnLaporan);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
@@ -214,36 +214,6 @@
             this.btnPaket.Text = "Paket";
             this.btnPaket.Click += new System.EventHandler(this.btnPaket_Click);
             // 
-            // btnJenisPaket
-            // 
-            this.btnJenisPaket.AnimationHoverSpeed = 0.07F;
-            this.btnJenisPaket.AnimationSpeed = 0.03F;
-            this.btnJenisPaket.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnJenisPaket.BorderColor = System.Drawing.Color.Black;
-            this.btnJenisPaket.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnJenisPaket.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnJenisPaket.CheckedForeColor = System.Drawing.Color.White;
-            this.btnJenisPaket.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnJenisPaket.CheckedImage")));
-            this.btnJenisPaket.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnJenisPaket.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnJenisPaket.FocusedColor = System.Drawing.Color.Empty;
-            this.btnJenisPaket.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnJenisPaket.ForeColor = System.Drawing.Color.White;
-            this.btnJenisPaket.Image = ((System.Drawing.Image)(resources.GetObject("btnJenisPaket.Image")));
-            this.btnJenisPaket.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnJenisPaket.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnJenisPaket.Location = new System.Drawing.Point(3, 147);
-            this.btnJenisPaket.Name = "btnJenisPaket";
-            this.btnJenisPaket.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnJenisPaket.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnJenisPaket.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnJenisPaket.OnHoverImage = null;
-            this.btnJenisPaket.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnJenisPaket.OnPressedColor = System.Drawing.Color.Black;
-            this.btnJenisPaket.Size = new System.Drawing.Size(237, 42);
-            this.btnJenisPaket.TabIndex = 14;
-            this.btnJenisPaket.Text = "Jenis Paket";
-            // 
             // btnPengguna
             // 
             this.btnPengguna.AnimationHoverSpeed = 0.07F;
@@ -262,7 +232,7 @@
             this.btnPengguna.Image = ((System.Drawing.Image)(resources.GetObject("btnPengguna.Image")));
             this.btnPengguna.ImageSize = new System.Drawing.Size(20, 20);
             this.btnPengguna.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnPengguna.Location = new System.Drawing.Point(3, 195);
+            this.btnPengguna.Location = new System.Drawing.Point(3, 147);
             this.btnPengguna.Name = "btnPengguna";
             this.btnPengguna.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnPengguna.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -275,35 +245,36 @@
             this.btnPengguna.Text = "Pengguna";
             this.btnPengguna.Click += new System.EventHandler(this.btnPengguna_Click);
             // 
-            // btnTransaksi
+            // btnEntriTransaksi
             // 
-            this.btnTransaksi.AnimationHoverSpeed = 0.07F;
-            this.btnTransaksi.AnimationSpeed = 0.03F;
-            this.btnTransaksi.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnTransaksi.BorderColor = System.Drawing.Color.Black;
-            this.btnTransaksi.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnTransaksi.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnTransaksi.CheckedForeColor = System.Drawing.Color.White;
-            this.btnTransaksi.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnTransaksi.CheckedImage")));
-            this.btnTransaksi.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnTransaksi.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnTransaksi.FocusedColor = System.Drawing.Color.Empty;
-            this.btnTransaksi.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTransaksi.ForeColor = System.Drawing.Color.White;
-            this.btnTransaksi.Image = ((System.Drawing.Image)(resources.GetObject("btnTransaksi.Image")));
-            this.btnTransaksi.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnTransaksi.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnTransaksi.Location = new System.Drawing.Point(3, 243);
-            this.btnTransaksi.Name = "btnTransaksi";
-            this.btnTransaksi.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnTransaksi.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnTransaksi.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnTransaksi.OnHoverImage = null;
-            this.btnTransaksi.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnTransaksi.OnPressedColor = System.Drawing.Color.Black;
-            this.btnTransaksi.Size = new System.Drawing.Size(237, 42);
-            this.btnTransaksi.TabIndex = 10;
-            this.btnTransaksi.Text = "Entri Transaksi";
+            this.btnEntriTransaksi.AnimationHoverSpeed = 0.07F;
+            this.btnEntriTransaksi.AnimationSpeed = 0.03F;
+            this.btnEntriTransaksi.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnEntriTransaksi.BorderColor = System.Drawing.Color.Black;
+            this.btnEntriTransaksi.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnEntriTransaksi.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnEntriTransaksi.CheckedForeColor = System.Drawing.Color.White;
+            this.btnEntriTransaksi.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnEntriTransaksi.CheckedImage")));
+            this.btnEntriTransaksi.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnEntriTransaksi.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnEntriTransaksi.FocusedColor = System.Drawing.Color.Empty;
+            this.btnEntriTransaksi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEntriTransaksi.ForeColor = System.Drawing.Color.White;
+            this.btnEntriTransaksi.Image = ((System.Drawing.Image)(resources.GetObject("btnEntriTransaksi.Image")));
+            this.btnEntriTransaksi.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnEntriTransaksi.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnEntriTransaksi.Location = new System.Drawing.Point(3, 195);
+            this.btnEntriTransaksi.Name = "btnEntriTransaksi";
+            this.btnEntriTransaksi.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnEntriTransaksi.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnEntriTransaksi.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnEntriTransaksi.OnHoverImage = null;
+            this.btnEntriTransaksi.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnEntriTransaksi.OnPressedColor = System.Drawing.Color.Black;
+            this.btnEntriTransaksi.Size = new System.Drawing.Size(237, 42);
+            this.btnEntriTransaksi.TabIndex = 10;
+            this.btnEntriTransaksi.Text = "Entri Transaksi";
+            this.btnEntriTransaksi.Click += new System.EventHandler(this.btnEntriTransaksi_Click);
             // 
             // btnLaporan
             // 
@@ -338,17 +309,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.LightGray;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(98, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 30);
+            this.label1.Size = new System.Drawing.Size(112, 30);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nyeuseuh";
+            this.label1.Text = "Seuseuh";
             // 
             // gunaPictureBox1
             // 
-            this.gunaPictureBox1.BackColor = System.Drawing.Color.LightGray;
+            this.gunaPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
             this.gunaPictureBox1.Location = new System.Drawing.Point(12, 12);
@@ -360,7 +331,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.LightGray;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
@@ -374,6 +345,37 @@
             this.PanelMenu.Name = "PanelMenu";
             this.PanelMenu.Size = new System.Drawing.Size(1022, 673);
             this.PanelMenu.TabIndex = 1;
+            // 
+            // btnDataTransaksi
+            // 
+            this.btnDataTransaksi.AnimationHoverSpeed = 0.07F;
+            this.btnDataTransaksi.AnimationSpeed = 0.03F;
+            this.btnDataTransaksi.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnDataTransaksi.BorderColor = System.Drawing.Color.Black;
+            this.btnDataTransaksi.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnDataTransaksi.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnDataTransaksi.CheckedForeColor = System.Drawing.Color.White;
+            this.btnDataTransaksi.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnDataTransaksi.CheckedImage")));
+            this.btnDataTransaksi.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnDataTransaksi.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnDataTransaksi.FocusedColor = System.Drawing.Color.Empty;
+            this.btnDataTransaksi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDataTransaksi.ForeColor = System.Drawing.Color.White;
+            this.btnDataTransaksi.Image = ((System.Drawing.Image)(resources.GetObject("btnDataTransaksi.Image")));
+            this.btnDataTransaksi.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnDataTransaksi.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnDataTransaksi.Location = new System.Drawing.Point(3, 243);
+            this.btnDataTransaksi.Name = "btnDataTransaksi";
+            this.btnDataTransaksi.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnDataTransaksi.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnDataTransaksi.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnDataTransaksi.OnHoverImage = null;
+            this.btnDataTransaksi.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnDataTransaksi.OnPressedColor = System.Drawing.Color.Black;
+            this.btnDataTransaksi.Size = new System.Drawing.Size(237, 42);
+            this.btnDataTransaksi.TabIndex = 16;
+            this.btnDataTransaksi.Text = "Data Transaksi";
+            this.btnDataTransaksi.Click += new System.EventHandler(this.btnDataTransaksi_Click);
             // 
             // FormDashboard
             // 
@@ -409,9 +411,9 @@
         private Guna.UI.WinForms.GunaAdvenceButton btnMember;
         private Guna.UI.WinForms.GunaAdvenceButton btnOutlet;
         private Guna.UI.WinForms.GunaAdvenceButton btnPaket;
-        private Guna.UI.WinForms.GunaAdvenceButton btnJenisPaket;
-        private Guna.UI.WinForms.GunaAdvenceButton btnTransaksi;
+        private Guna.UI.WinForms.GunaAdvenceButton btnEntriTransaksi;
         private Guna.UI.WinForms.GunaAdvenceButton btnLaporan;
+        private Guna.UI.WinForms.GunaAdvenceButton btnDataTransaksi;
     }
 }
 

@@ -84,5 +84,10 @@ namespace Laundry.MenuTab
         {
             readDataPaket();
         }
+
+        private void gunaAdvenceButton1_Click(object sender, EventArgs e)
+        {
+            new Form_JenisPaket().ShowDialog();
+        }
     }
 }

@@ -69,5 +69,21 @@ namespace Laundry
             paket.Dock = DockStyle.Fill;
             PanelMenu.Controls.Add(paket);
         }
+
+        private void btnEntriTransaksi_Click(object sender, EventArgs e)
+        {
+            PanelMenu.Controls.Clear();
+            UserControl entri = new UC_EntriTransaksi();
+            entri.Dock = DockStyle.Fill;
+            PanelMenu.Controls.Add(entri);
+        }
+
+        private void btnDataTransaksi_Click(object sender, EventArgs e)
+        {
+            PanelMenu.Controls.Clear();
+            UserControl data = new UC_Transaksi();
+            data.Dock = DockStyle.Fill;
+            PanelMenu.Controls.Add(data);
+        }
     }
 }
