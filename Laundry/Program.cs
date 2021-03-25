@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Luthor.lib;
 using System.Windows.Forms;
 using System.Drawing;
+using MySql.Data.MySqlClient;
 using System.IO;
 
 namespace Laundry

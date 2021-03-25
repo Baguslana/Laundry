@@ -102,7 +102,7 @@ namespace Laundry.MenuTab
         public void functionItems(Object sender, EventArgs e)
         {
             var item = (sender as Guna.UI.WinForms.GunaTileButton);
-            new FormAddQuantity(item.Name, dataTableEntriTransaksi).ShowDialog();
+            new Form_AddQty(item.Name, dataTableEntriTransaksi).ShowDialog();
         }
 
         private void btnCariPelanggan_Click(object sender, EventArgs e)

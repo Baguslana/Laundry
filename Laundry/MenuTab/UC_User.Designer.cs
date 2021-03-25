@@ -33,17 +33,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_User));
             this.dataTbUser = new Guna.UI.WinForms.GunaDataGridView();
-            this.btnAdd = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnEdit = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnDelete = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnRefresh = new Guna.UI.WinForms.GunaAdvenceButton();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNama = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnUsername = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnIdOutlet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnOutlet = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAdd = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnEdit = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnDelete = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnRefresh = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.dataTbUser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,6 +119,56 @@
             this.dataTbUser.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataTbUser.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataTbUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTbUser_CellClick);
+            // 
+            // ColumnId
+            // 
+            this.ColumnId.DataPropertyName = "id";
+            this.ColumnId.HeaderText = "Column";
+            this.ColumnId.MinimumWidth = 6;
+            this.ColumnId.Name = "ColumnId";
+            this.ColumnId.ReadOnly = true;
+            this.ColumnId.Visible = false;
+            // 
+            // ColumnNama
+            // 
+            this.ColumnNama.DataPropertyName = "nama";
+            this.ColumnNama.HeaderText = "Nama";
+            this.ColumnNama.MinimumWidth = 6;
+            this.ColumnNama.Name = "ColumnNama";
+            this.ColumnNama.ReadOnly = true;
+            // 
+            // ColumnUsername
+            // 
+            this.ColumnUsername.DataPropertyName = "username";
+            this.ColumnUsername.HeaderText = "Username";
+            this.ColumnUsername.MinimumWidth = 6;
+            this.ColumnUsername.Name = "ColumnUsername";
+            this.ColumnUsername.ReadOnly = true;
+            // 
+            // ColumnRole
+            // 
+            this.ColumnRole.DataPropertyName = "level";
+            this.ColumnRole.HeaderText = "Role";
+            this.ColumnRole.MinimumWidth = 6;
+            this.ColumnRole.Name = "ColumnRole";
+            this.ColumnRole.ReadOnly = true;
+            // 
+            // ColumnIdOutlet
+            // 
+            this.ColumnIdOutlet.DataPropertyName = "id_outlet";
+            this.ColumnIdOutlet.HeaderText = "Column2";
+            this.ColumnIdOutlet.MinimumWidth = 6;
+            this.ColumnIdOutlet.Name = "ColumnIdOutlet";
+            this.ColumnIdOutlet.ReadOnly = true;
+            this.ColumnIdOutlet.Visible = false;
+            // 
+            // ColumnOutlet
+            // 
+            this.ColumnOutlet.DataPropertyName = "namaOutlet";
+            this.ColumnOutlet.HeaderText = "Outlet";
+            this.ColumnOutlet.MinimumWidth = 6;
+            this.ColumnOutlet.Name = "ColumnOutlet";
+            this.ColumnOutlet.ReadOnly = true;
             // 
             // btnAdd
             // 
@@ -251,60 +302,19 @@
             this.btnRefresh.Visible = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // ColumnId
+            // reportViewer1
             // 
-            this.ColumnId.DataPropertyName = "id";
-            this.ColumnId.HeaderText = "Column";
-            this.ColumnId.MinimumWidth = 6;
-            this.ColumnId.Name = "ColumnId";
-            this.ColumnId.ReadOnly = true;
-            this.ColumnId.Visible = false;
-            // 
-            // ColumnNama
-            // 
-            this.ColumnNama.DataPropertyName = "nama";
-            this.ColumnNama.HeaderText = "Nama";
-            this.ColumnNama.MinimumWidth = 6;
-            this.ColumnNama.Name = "ColumnNama";
-            this.ColumnNama.ReadOnly = true;
-            // 
-            // ColumnUsername
-            // 
-            this.ColumnUsername.DataPropertyName = "username";
-            this.ColumnUsername.HeaderText = "Username";
-            this.ColumnUsername.MinimumWidth = 6;
-            this.ColumnUsername.Name = "ColumnUsername";
-            this.ColumnUsername.ReadOnly = true;
-            // 
-            // ColumnRole
-            // 
-            this.ColumnRole.DataPropertyName = "level";
-            this.ColumnRole.HeaderText = "Role";
-            this.ColumnRole.MinimumWidth = 6;
-            this.ColumnRole.Name = "ColumnRole";
-            this.ColumnRole.ReadOnly = true;
-            // 
-            // ColumnIdOutlet
-            // 
-            this.ColumnIdOutlet.DataPropertyName = "id_outlet";
-            this.ColumnIdOutlet.HeaderText = "Column2";
-            this.ColumnIdOutlet.MinimumWidth = 6;
-            this.ColumnIdOutlet.Name = "ColumnIdOutlet";
-            this.ColumnIdOutlet.ReadOnly = true;
-            this.ColumnIdOutlet.Visible = false;
-            // 
-            // ColumnOutlet
-            // 
-            this.ColumnOutlet.DataPropertyName = "namaOutlet";
-            this.ColumnOutlet.HeaderText = "Outlet";
-            this.ColumnOutlet.MinimumWidth = 6;
-            this.ColumnOutlet.Name = "ColumnOutlet";
-            this.ColumnOutlet.ReadOnly = true;
+            this.reportViewer1.Location = new System.Drawing.Point(497, 21);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Remote;
+            this.reportViewer1.Size = new System.Drawing.Size(487, 260);
+            this.reportViewer1.TabIndex = 7;
             // 
             // UC_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
@@ -333,5 +343,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRole;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnIdOutlet;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnOutlet;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

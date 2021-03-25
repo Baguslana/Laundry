@@ -106,6 +106,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(364, 30);
             this.txtUsername.TabIndex = 1;
+            this.txtUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsername_KeyPress);
             // 
             // txtPassword
             // 
@@ -146,7 +147,7 @@
             this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label6
             // 

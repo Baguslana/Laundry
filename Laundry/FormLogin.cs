@@ -19,16 +19,17 @@ namespace Laundry
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             if (txtUsername.Text.Length > 0 && txtPassword.Text.Length > 0)
             {
                 if (Auth.Login(txtUsername.Text, Sha256.Encrypt(txtPassword.Text), "tb_user"))
                 {
+                    Db.Insert("login_log", $"null, NOW(), {Session.getUserLogged().Rows[0].Field<int>("id")}");
                     Form Dashboard = new FormDashboard();
                     this.Hide();
                     Dashboard.Show();
-                } 
+                }
                 else
                 {
                     MessageBox.Show("Username atau password salah", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -38,7 +39,7 @@ namespace Laundry
             else if (txtUsername.Text.Length == 0 && txtPassword.Text.Length == 0) MessageBox.Show("Masukan username dan password", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (txtUsername.Text.Length == 0)
             {
-                MessageBox.Show("Masukan username", "",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Masukan username", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtUsername.Focus();
             }
             else if (txtPassword.Text.Length == 0)
@@ -46,6 +47,11 @@ namespace Laundry
                 MessageBox.Show("Masukan password", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtPassword.Focus();
             }
+        }
+
+        private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.KeyChar = Char.ToLower(e.KeyChar);
         }
 
         private void txtPassword_KeyDown(object sender, KeyEventArgs e)
