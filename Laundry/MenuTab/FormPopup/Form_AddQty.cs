@@ -59,5 +59,28 @@ namespace Laundry.MenuTab.FormPopup
                 e.Handled = true;
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+    }
+}
+
+namespace Laundry.Properties
+{
+    class Resources
+    {
+        internal static Image left_arrow_50px;
+        internal static Image checkmark_50px;
+
+        public static Image exit_50px { get; internal set; }
+        public static Image registration_50px { get; internal set; }
+        public static Image shop_50px { get; internal set; }
+        public static Image product_50px { get; internal set; }
+        public static Image staff_50px { get; internal set; }
+        public static Image cash_in_hand_50px { get; internal set; }
+        public static Image invoice_50px { get; internal set; }
+        public static Image test_results_50px { get; internal set; }
     }
 }

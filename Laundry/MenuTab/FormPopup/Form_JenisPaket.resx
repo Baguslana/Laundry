@@ -117,7 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnTambah.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACiSURBVGhD7c6xCcRAAAPB679pfzIo+NSYQ6AJFYg9MzMz87Hnj7mP/jD30R/mPvrD3Ed/mPvo
+        D3Mf/WHuoz/MffSHuY/+MPfRH+Y++sPcR3+Y++gP8z06rpHxnr9rZLzn7xoZ7/m7RsY9OsLcR3+Y++gP
+        cx/9Ye6jP8x99Ie5j/4w99Ef5j76w9xHf5j76A9zH/1h7qM/zH30h3lmZma+cc4Pl4y8buoMamYAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
   <metadata name="ColumnId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="btnBack.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAFcSURBVGhD7ZgtS0RBFEDfKrosLJi0idUibBf/gGLQYPRXiMksyBazIJgMFovBoMWmYBebXxgE
+        sWgQ9HnueB/zZqyGuXAPnPBmbjiv7MzbynEcx3Ecx3H+lbquV/BeXdZlWxC+iJ/Y8KhbdiB6Ht9DfuRJ
+        t21A8By+hvTIF67pSPkQO4svUt7iG9d1pHyIncEHKc/Y1JHyIXYKb0N2yo6OlA+xfbwK2Sl72NGxsiG0
+        i+dSnXGEozpWNhKKx1KdcYrjOlY+xO6GbFukNwwetsKyTeINg4fh75pJ4g2Dhw7uh2VbPGN6eWVhBA9l
+        N+MS+zpmA4LH8ETqM86wq2M2ILiHF1KfIT/NNs6SBoIn8FrqMw7QxuneQPAk3kh9xraO2IHoabwL+Skb
+        OmIHogf4FvIjtj6sGohewA95gxb2vtkFwpew/eeDrW/2NsSvopymf09Ux3Ecx3EcxymbqvoBaWvrkWS3
+        5EkAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

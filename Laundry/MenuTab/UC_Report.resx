@@ -117,39 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnBack.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAFcSURBVGhD7ZgtS0RBFEDfKrosLJi0idUibBf/gGLQYPRXiMksyBazIJgMFovBoMWmYBebXxgE
-        sWgQ9HnueB/zZqyGuXAPnPBmbjiv7MzbynEcx3Ecx3H+lbquV/BeXdZlWxC+iJ/Y8KhbdiB6Ht9DfuRJ
-        t21A8By+hvTIF67pSPkQO4svUt7iG9d1pHyIncEHKc/Y1JHyIXYKb0N2yo6OlA+xfbwK2Sl72NGxsiG0
-        i+dSnXGEozpWNhKKx1KdcYrjOlY+xO6GbFukNwwetsKyTeINg4fh75pJ4g2Dhw7uh2VbPGN6eWVhBA9l
-        N+MS+zpmA4LH8ETqM86wq2M2ILiHF1KfIT/NNs6SBoIn8FrqMw7QxuneQPAk3kh9xraO2IHoabwL+Skb
-        OmIHogf4FvIjtj6sGohewA95gxb2vtkFwpew/eeDrW/2NsSvopymf09Ux3Ecx3EcxymbqvoBaWvrkWS3
-        5EkAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnTambah.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAcJJREFUOE+V
-        lEsrRGEYx0e5ZNyGlAYbC3wM5TIWWE5kYSRN+QBqyn2nLLG3YCO2iGJSWJDLVj4BJZcopPH7n3nOMOOM
-        Gb/6Nc/zvM975rznvO/x5SKRSFRhk1lp5f/BxGqcwzM8wBUzjqc4iwFr/xsa+/ECh9Bv5RSqYcR6wlb2
-        hoYYrmO5lbJCTwVu4LiV0mFgEHWxAgxhpw39grEujVvvJvbbUBIKevBaQhkG8RlfsQc7MGy2Yy9q7Anr
-        UHequd8vjGQCIxZHMV9Gbc4IxhQ7kJxgqcVjmC9Rm6MXdaRYiW457iRAPID5knp2xIfoV9CCq1ZXvofi
-        HbU9hvHDIxe7Nk3z1rBZQSs6F+S3Fj9RXDudQHzjkQv11lhNF2xRkFoyv934k0VcSoYOmbkI2VwtuUyx
-        kmOsRC3Ji3nTC50oHdXkSxEk2jbaLgHU2c3k3sxkH7WHtTPSto2Kl6iNXYQ6/I+YjQecwULUI7vC9C8R
-        BffoleAC6nn24RQum4p1UjSmnmL8ffRcGNDH4RxdbnEb9UdyB+/QRUfO++PgQsM0vqk7B+qZtGl/Q2MD
-        6s5eMBPVtjBo7f+DiY3YZtZbOQs+3xcwqLQ+pE6R4AAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnTambah.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAACiSURBVGhD7c6xCcRAAAPB679pfzIo+NSYQ6AJFYg9MzMz87Hnj7mP/jD30R/mPvrD3Ed/mPvo
-        D3Mf/WHuoz/MffSHuY/+MPfRH+Y++sPcR3+Y++gP8z06rpHxnr9rZLzn7xoZ7/m7RsY9OsLcR3+Y++gP
-        cx/9Ye6jP8x99Ie5j/4w99Ef5j76w9xHf5j76A9zH/1h7qM/zH30h3lmZma+cc4Pl4y8buoMamYAAAAA
-        SUVORK5CYII=
-</value>
-  </data>
+  <metadata name="laporan1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

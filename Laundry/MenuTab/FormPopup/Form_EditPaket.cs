@@ -75,5 +75,10 @@ namespace Laundry.MenuTab.FormPopup
             if (txtNamaPaket.Text.Length > 0 && txtHarga.Text.Length > 0 && cmbJenisPaket.SelectedIndex >= 0 && cmbOutlet.SelectedIndex >= 0) return true;
             return false;
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

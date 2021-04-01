@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_AddPelanggan));
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -45,12 +46,14 @@
             this.rbLakilaki = new Guna.UI.WinForms.GunaRadioButton();
             this.rbPerempuan = new Guna.UI.WinForms.GunaRadioButton();
             this.txtJenisKelamin = new Guna.UI.WinForms.GunaTextBox();
+            this.btnBack = new Guna.UI.WinForms.GunaButton();
             this.SuspendLayout();
             // 
             // gunaButton1
             // 
             this.gunaButton1.AnimationHoverSpeed = 0.07F;
             this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
             this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaButton1.BorderColor = System.Drawing.Color.Black;
             this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
@@ -63,7 +66,7 @@
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton1.Location = new System.Drawing.Point(0, 0);
             this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton1.OnHoverImage = null;
@@ -176,6 +179,7 @@
             // 
             this.btnTambah.AnimationHoverSpeed = 0.07F;
             this.btnTambah.AnimationSpeed = 0.03F;
+            this.btnTambah.BackColor = System.Drawing.Color.Transparent;
             this.btnTambah.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnTambah.BorderColor = System.Drawing.Color.Black;
             this.btnTambah.CheckedBaseColor = System.Drawing.Color.Gray;
@@ -187,7 +191,7 @@
             this.btnTambah.FocusedColor = System.Drawing.Color.Empty;
             this.btnTambah.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTambah.ForeColor = System.Drawing.Color.White;
-            this.btnTambah.Image = null;
+            this.btnTambah.Image = ((System.Drawing.Image)(resources.GetObject("btnTambah.Image")));
             this.btnTambah.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnTambah.ImageSize = new System.Drawing.Size(20, 20);
             this.btnTambah.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
@@ -199,6 +203,7 @@
             this.btnTambah.OnHoverImage = null;
             this.btnTambah.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnTambah.OnPressedColor = System.Drawing.Color.Black;
+            this.btnTambah.Radius = 5;
             this.btnTambah.Size = new System.Drawing.Size(120, 42);
             this.btnTambah.TabIndex = 37;
             this.btnTambah.Text = "Tambah";
@@ -250,12 +255,37 @@
             this.txtJenisKelamin.Text = "gunaTextBox1";
             this.txtJenisKelamin.Visible = false;
             // 
+            // btnBack
+            // 
+            this.btnBack.AnimationHoverSpeed = 0.07F;
+            this.btnBack.AnimationSpeed = 0.03F;
+            this.btnBack.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnBack.BorderColor = System.Drawing.Color.Black;
+            this.btnBack.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnBack.FocusedColor = System.Drawing.Color.Empty;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBack.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnBack.Location = new System.Drawing.Point(0, 0);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnBack.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnBack.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnBack.OnHoverImage = null;
+            this.btnBack.OnPressedColor = System.Drawing.Color.Black;
+            this.btnBack.Size = new System.Drawing.Size(40, 40);
+            this.btnBack.TabIndex = 41;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // Form_AddPelanggan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(410, 530);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.txtJenisKelamin);
             this.Controls.Add(this.rbPerempuan);
             this.Controls.Add(this.rbLakilaki);
@@ -275,6 +305,7 @@
             this.Controls.Add(this.panelsamping);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_AddPelanggan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form_EditUser";
             this.Load += new System.EventHandler(this.Form_AddPelanggan_Load);
             this.ResumeLayout(false);
@@ -300,5 +331,6 @@
         private Guna.UI.WinForms.GunaRadioButton rbLakilaki;
         private Guna.UI.WinForms.GunaRadioButton rbPerempuan;
         private Guna.UI.WinForms.GunaTextBox txtJenisKelamin;
+        private Guna.UI.WinForms.GunaButton btnBack;
     }
 }

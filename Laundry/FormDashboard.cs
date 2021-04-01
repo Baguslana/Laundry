@@ -19,21 +19,26 @@ namespace Laundry
             InitializeComponent();
         }
 
-        private void Dashboard_Load(object sender, EventArgs e)
+        private void FormDashboard_Load(object sender, EventArgs e)
         {
+            //MessageBox.Show(Session.getUserLogged().Rows[0].Field<string>("level"));
             /*if (Session.getUserLogged().Rows.Count > 0)
             {
-                if (Session.getUserLogged().Rows[0].Field<string>("level") == "kasir")
+                if (Session.getUserLogged().Rows[0].Field<string>("level") != "admin")
                 {
-                    //btnpayments.Visible = false;
-
-                    
+                    btnOutlet.Visible = false;
+                    btnPaket.Hide();
+                    btnPengguna.Hide();
                 }
 
                 if (Session.getUserLogged().Rows[0].Field<string>("level") == "owner")
                 {
-                    //labelstudents.Visible = false;
-                    
+                    btnMember.Hide();
+                    btnOutlet.Hide();
+                    btnPaket.Hide();
+                    btnPengguna.Hide();
+                    btnEntriTransaksi.Hide();
+                    btnDataTransaksi.Hide();
                 }
             }*/
         }
@@ -84,6 +89,26 @@ namespace Laundry
             UserControl data = new UC_Transaksi();
             data.Dock = DockStyle.Fill;
             PanelMenu.Controls.Add(data);
+        }
+
+        private void gunaAdvenceButton8_Click(object sender, EventArgs e)
+        {
+            var confirm = MessageBox.Show("Anda yakin ingin logout?", "KONFORMASI", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirm == DialogResult.Yes)
+            {
+                Auth.Logout();
+                this.Hide();
+                Form login = new FormLogin();
+                login.Show();
+            }
+        }
+
+        private void btnLaporan_Click(object sender, EventArgs e)
+        {
+            PanelMenu.Controls.Clear();
+            UserControl report = new UC_Report();
+            report.Dock = DockStyle.Fill;
+            PanelMenu.Controls.Add(report);
         }
     }
 }

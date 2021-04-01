@@ -23,7 +23,7 @@ namespace Laundry
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormLogin());
-            if (Connection.Ping()) Application.Run(new FormDashboard());
+            if (Connection.Ping()) Application.Run(new FormLogin());
             else MessageBox.Show("Tidak terhubung dengan database. Silahkan hubungi teknisi", "DATABASES CONNECTION ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 

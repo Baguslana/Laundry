@@ -28,19 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_JenisPaket));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelsamping = new System.Windows.Forms.Panel();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.btnTambah = new Guna.UI.WinForms.GunaAdvenceButton();
             this.dataTbJenisPaket = new Guna.UI.WinForms.GunaDataGridView();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnJenisPaket = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtJenisPaket = new System.Windows.Forms.TextBox();
             this.paneltxt = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnRefresh = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnJenisPaket = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnBack = new Guna.UI.WinForms.GunaButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataTbJenisPaket)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +70,7 @@
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton1.Location = new System.Drawing.Point(0, 0);
             this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton1.OnHoverImage = null;
@@ -82,6 +84,7 @@
             // 
             this.btnTambah.AnimationHoverSpeed = 0.07F;
             this.btnTambah.AnimationSpeed = 0.03F;
+            this.btnTambah.BackColor = System.Drawing.Color.Transparent;
             this.btnTambah.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnTambah.BorderColor = System.Drawing.Color.Black;
             this.btnTambah.CheckedBaseColor = System.Drawing.Color.Gray;
@@ -93,7 +96,7 @@
             this.btnTambah.FocusedColor = System.Drawing.Color.Empty;
             this.btnTambah.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTambah.ForeColor = System.Drawing.Color.White;
-            this.btnTambah.Image = null;
+            this.btnTambah.Image = ((System.Drawing.Image)(resources.GetObject("btnTambah.Image")));
             this.btnTambah.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnTambah.ImageSize = new System.Drawing.Size(20, 20);
             this.btnTambah.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
@@ -105,6 +108,7 @@
             this.btnTambah.OnHoverImage = null;
             this.btnTambah.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnTambah.OnPressedColor = System.Drawing.Color.Black;
+            this.btnTambah.Radius = 5;
             this.btnTambah.Size = new System.Drawing.Size(120, 42);
             this.btnTambah.TabIndex = 20;
             this.btnTambah.Text = "Tambah";
@@ -114,34 +118,34 @@
             // dataTbJenisPaket
             // 
             this.dataTbJenisPaket.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dataTbJenisPaket.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dataTbJenisPaket.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataTbJenisPaket.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataTbJenisPaket.BackgroundColor = System.Drawing.Color.White;
             this.dataTbJenisPaket.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataTbJenisPaket.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataTbJenisPaket.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataTbJenisPaket.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataTbJenisPaket.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataTbJenisPaket.ColumnHeadersHeight = 27;
             this.dataTbJenisPaket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataTbJenisPaket.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnId,
             this.ColumnJenisPaket});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataTbJenisPaket.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataTbJenisPaket.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataTbJenisPaket.EnableHeadersVisualStyles = false;
             this.dataTbJenisPaket.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataTbJenisPaket.Location = new System.Drawing.Point(31, 152);
@@ -177,6 +181,21 @@
             this.dataTbJenisPaket.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataTbJenisPaket.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTbPaket_CellValueChanged);
             this.dataTbJenisPaket.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dataTbPaket_UserDeletingRow);
+            // 
+            // ColumnId
+            // 
+            this.ColumnId.DataPropertyName = "id";
+            this.ColumnId.HeaderText = "Id";
+            this.ColumnId.MinimumWidth = 6;
+            this.ColumnId.Name = "ColumnId";
+            this.ColumnId.Visible = false;
+            // 
+            // ColumnJenisPaket
+            // 
+            this.ColumnJenisPaket.DataPropertyName = "jenis";
+            this.ColumnJenisPaket.HeaderText = "Jenis Paket";
+            this.ColumnJenisPaket.MinimumWidth = 6;
+            this.ColumnJenisPaket.Name = "ColumnJenisPaket";
             // 
             // txtJenisPaket
             // 
@@ -235,20 +254,29 @@
             this.btnRefresh.Visible = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // ColumnId
+            // btnBack
             // 
-            this.ColumnId.DataPropertyName = "id";
-            this.ColumnId.HeaderText = "Id";
-            this.ColumnId.MinimumWidth = 6;
-            this.ColumnId.Name = "ColumnId";
-            this.ColumnId.Visible = false;
-            // 
-            // ColumnJenisPaket
-            // 
-            this.ColumnJenisPaket.DataPropertyName = "jenis";
-            this.ColumnJenisPaket.HeaderText = "Jenis Paket";
-            this.ColumnJenisPaket.MinimumWidth = 6;
-            this.ColumnJenisPaket.Name = "ColumnJenisPaket";
+            this.btnBack.AnimationHoverSpeed = 0.07F;
+            this.btnBack.AnimationSpeed = 0.03F;
+            this.btnBack.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnBack.BorderColor = System.Drawing.Color.Black;
+            this.btnBack.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnBack.FocusedColor = System.Drawing.Color.Empty;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBack.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnBack.Location = new System.Drawing.Point(0, 0);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnBack.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnBack.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnBack.OnHoverImage = null;
+            this.btnBack.OnPressedColor = System.Drawing.Color.Black;
+            this.btnBack.Size = new System.Drawing.Size(40, 40);
+            this.btnBack.TabIndex = 37;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // Form_JenisPaket
             // 
@@ -256,6 +284,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(410, 530);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.txtJenisPaket);
             this.Controls.Add(this.paneltxt);
@@ -286,5 +315,6 @@
         private Guna.UI.WinForms.GunaAdvenceButton btnRefresh;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnJenisPaket;
+        private Guna.UI.WinForms.GunaButton btnBack;
     }
 }

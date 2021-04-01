@@ -39,12 +39,11 @@
             this.ColumnRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnIdOutlet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnOutlet = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnAdd = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnEdit = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnDelete = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnRefresh = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.btnDelete = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnEdit = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnAdd = new Guna.UI.WinForms.GunaAdvenceButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataTbUser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -170,105 +169,12 @@
             this.ColumnOutlet.Name = "ColumnOutlet";
             this.ColumnOutlet.ReadOnly = true;
             // 
-            // btnAdd
-            // 
-            this.btnAdd.AnimationHoverSpeed = 0.07F;
-            this.btnAdd.AnimationSpeed = 0.03F;
-            this.btnAdd.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAdd.BorderColor = System.Drawing.Color.Black;
-            this.btnAdd.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnAdd.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnAdd.CheckedForeColor = System.Drawing.Color.White;
-            this.btnAdd.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.CheckedImage")));
-            this.btnAdd.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAdd.FocusedColor = System.Drawing.Color.Empty;
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
-            this.btnAdd.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAdd.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnAdd.Location = new System.Drawing.Point(38, 239);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnAdd.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnAdd.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnAdd.OnHoverImage = null;
-            this.btnAdd.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnAdd.OnPressedColor = System.Drawing.Color.Black;
-            this.btnAdd.Size = new System.Drawing.Size(121, 42);
-            this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "Tambah";
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(990, 340);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(29, 100);
             this.panel1.TabIndex = 3;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.AnimationHoverSpeed = 0.07F;
-            this.btnEdit.AnimationSpeed = 0.03F;
-            this.btnEdit.BaseColor = System.Drawing.Color.Gold;
-            this.btnEdit.BorderColor = System.Drawing.Color.Black;
-            this.btnEdit.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnEdit.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnEdit.CheckedForeColor = System.Drawing.Color.White;
-            this.btnEdit.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnEdit.CheckedImage")));
-            this.btnEdit.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnEdit.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnEdit.FocusedColor = System.Drawing.Color.Empty;
-            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
-            this.btnEdit.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEdit.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnEdit.Location = new System.Drawing.Point(165, 239);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnEdit.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnEdit.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnEdit.OnHoverImage = null;
-            this.btnEdit.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnEdit.OnPressedColor = System.Drawing.Color.Black;
-            this.btnEdit.Size = new System.Drawing.Size(121, 42);
-            this.btnEdit.TabIndex = 4;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.AnimationHoverSpeed = 0.07F;
-            this.btnDelete.AnimationSpeed = 0.03F;
-            this.btnDelete.BaseColor = System.Drawing.Color.Crimson;
-            this.btnDelete.BorderColor = System.Drawing.Color.Black;
-            this.btnDelete.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnDelete.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnDelete.CheckedForeColor = System.Drawing.Color.White;
-            this.btnDelete.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.CheckedImage")));
-            this.btnDelete.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnDelete.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnDelete.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
-            this.btnDelete.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnDelete.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnDelete.Location = new System.Drawing.Point(292, 239);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnDelete.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnDelete.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnDelete.OnHoverImage = null;
-            this.btnDelete.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnDelete.OnPressedColor = System.Drawing.Color.Black;
-            this.btnDelete.Size = new System.Drawing.Size(121, 42);
-            this.btnDelete.TabIndex = 5;
-            this.btnDelete.Text = "Hapus";
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnRefresh
             // 
@@ -285,7 +191,7 @@
             this.btnRefresh.FocusedColor = System.Drawing.Color.Empty;
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
+            this.btnRefresh.Image = null;
             this.btnRefresh.ImageSize = new System.Drawing.Size(20, 20);
             this.btnRefresh.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnRefresh.Location = new System.Drawing.Point(165, 191);
@@ -302,19 +208,112 @@
             this.btnRefresh.Visible = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // reportViewer1
+            // btnDelete
             // 
-            this.reportViewer1.Location = new System.Drawing.Point(497, 21);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Remote;
-            this.reportViewer1.Size = new System.Drawing.Size(487, 260);
-            this.reportViewer1.TabIndex = 7;
+            this.btnDelete.AnimationHoverSpeed = 0.07F;
+            this.btnDelete.AnimationSpeed = 0.03F;
+            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete.BaseColor = System.Drawing.Color.Crimson;
+            this.btnDelete.BorderColor = System.Drawing.Color.Black;
+            this.btnDelete.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnDelete.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnDelete.CheckedForeColor = System.Drawing.Color.White;
+            this.btnDelete.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.CheckedImage")));
+            this.btnDelete.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnDelete.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnDelete.FocusedColor = System.Drawing.Color.Empty;
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Image = null;
+            this.btnDelete.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnDelete.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnDelete.Location = new System.Drawing.Point(292, 239);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnDelete.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnDelete.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnDelete.OnHoverImage = null;
+            this.btnDelete.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnDelete.OnPressedColor = System.Drawing.Color.Black;
+            this.btnDelete.Radius = 5;
+            this.btnDelete.Size = new System.Drawing.Size(121, 42);
+            this.btnDelete.TabIndex = 5;
+            this.btnDelete.Text = "Hapus";
+            this.btnDelete.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.AnimationHoverSpeed = 0.07F;
+            this.btnEdit.AnimationSpeed = 0.03F;
+            this.btnEdit.BackColor = System.Drawing.Color.Transparent;
+            this.btnEdit.BaseColor = System.Drawing.Color.Gold;
+            this.btnEdit.BorderColor = System.Drawing.Color.Black;
+            this.btnEdit.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnEdit.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnEdit.CheckedForeColor = System.Drawing.Color.White;
+            this.btnEdit.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnEdit.CheckedImage")));
+            this.btnEdit.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnEdit.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnEdit.FocusedColor = System.Drawing.Color.Empty;
+            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.Image = null;
+            this.btnEdit.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnEdit.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnEdit.Location = new System.Drawing.Point(165, 239);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnEdit.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnEdit.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnEdit.OnHoverImage = null;
+            this.btnEdit.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnEdit.OnPressedColor = System.Drawing.Color.Black;
+            this.btnEdit.Radius = 5;
+            this.btnEdit.Size = new System.Drawing.Size(121, 42);
+            this.btnEdit.TabIndex = 4;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.AnimationHoverSpeed = 0.07F;
+            this.btnAdd.AnimationSpeed = 0.03F;
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAdd.BorderColor = System.Drawing.Color.Black;
+            this.btnAdd.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnAdd.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnAdd.CheckedForeColor = System.Drawing.Color.White;
+            this.btnAdd.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.CheckedImage")));
+            this.btnAdd.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAdd.FocusedColor = System.Drawing.Color.Empty;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Image = null;
+            this.btnAdd.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnAdd.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnAdd.Location = new System.Drawing.Point(38, 239);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnAdd.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnAdd.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnAdd.OnHoverImage = null;
+            this.btnAdd.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnAdd.OnPressedColor = System.Drawing.Color.Black;
+            this.btnAdd.Radius = 5;
+            this.btnAdd.Size = new System.Drawing.Size(121, 42);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "Tambah";
+            this.btnAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // UC_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
@@ -343,6 +342,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRole;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnIdOutlet;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnOutlet;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

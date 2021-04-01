@@ -29,73 +29,74 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_EntriTransaksi));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.flPaket = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPaket = new Guna.UI.WinForms.GunaTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnPilihPaket = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnPilihOutlet = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.cmbOutlet = new Guna.UI.WinForms.GunaComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
-            this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
-            this.txtPelanggan = new Guna.UI.WinForms.GunaTextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtDiskon = new Guna.UI.WinForms.GunaTextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtPajak = new Guna.UI.WinForms.GunaTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtBiayaTambahan = new Guna.UI.WinForms.GunaTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.gunaGroupBox3 = new Guna.UI.WinForms.GunaGroupBox();
-            this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.txtKeterangan = new Guna.UI.WinForms.GunaTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
+            this.gunaWinSwitch1 = new Guna.UI.WinForms.GunaWinSwitch();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.gunaWinSwitch1 = new Guna.UI.WinForms.GunaWinSwitch();
+            this.gunaGroupBox3 = new Guna.UI.WinForms.GunaGroupBox();
+            this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.btnBiayaTambahan = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnPajak = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnDiskon = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnCariPelanggan = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.txtBiayaTambahan = new Guna.UI.WinForms.GunaTextBox();
+            this.txtPajak = new Guna.UI.WinForms.GunaTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtDiskon = new Guna.UI.WinForms.GunaTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtPelanggan = new Guna.UI.WinForms.GunaTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
             this.dataTableEntriTransaksi = new Guna.UI.WinForms.GunaDataGridView();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPaket = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnHarga = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnAction = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.labelBiayaTambahan = new System.Windows.Forms.Label();
+            this.labelPajak = new System.Windows.Forms.Label();
+            this.labelDiskon = new System.Windows.Forms.Label();
+            this.labelHargaCucian = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.labelHargaCucian = new System.Windows.Forms.Label();
-            this.labelDiskon = new System.Windows.Forms.Label();
-            this.labelPajak = new System.Windows.Forms.Label();
-            this.labelBiayaTambahan = new System.Windows.Forms.Label();
             this.labelTotal = new System.Windows.Forms.Label();
+            this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
             this.txtIdPelanggan = new Guna.UI.WinForms.GunaTextBox();
-            this.btnPilihOutlet = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnPilihPaket = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnCariPelanggan = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnDiskon = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnPajak = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnBiayaTambahan = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnTambah = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.gunaGroupBox1.SuspendLayout();
-            this.gunaGroupBox3.SuspendLayout();
             this.gunaGroupBox2.SuspendLayout();
+            this.gunaGroupBox3.SuspendLayout();
+            this.gunaGroupBox1.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataTableEntriTransaksi)).BeginInit();
+            this.panel5.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,32 +113,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(15, 100);
             this.panel1.TabIndex = 4;
-            // 
-            // gunaButton1
-            // 
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
-            this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
-            this.gunaButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(0, 0);
-            this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Size = new System.Drawing.Size(332, 42);
-            this.gunaButton1.TabIndex = 5;
-            this.gunaButton1.Text = "Paket";
-            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -187,6 +162,93 @@
             this.panel2.Size = new System.Drawing.Size(332, 198);
             this.panel2.TabIndex = 10;
             // 
+            // btnPilihPaket
+            // 
+            this.btnPilihPaket.AnimationHoverSpeed = 0.07F;
+            this.btnPilihPaket.AnimationSpeed = 0.03F;
+            this.btnPilihPaket.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnPilihPaket.BorderColor = System.Drawing.Color.Black;
+            this.btnPilihPaket.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnPilihPaket.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnPilihPaket.CheckedForeColor = System.Drawing.Color.White;
+            this.btnPilihPaket.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnPilihPaket.CheckedImage")));
+            this.btnPilihPaket.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnPilihPaket.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnPilihPaket.FocusedColor = System.Drawing.Color.Empty;
+            this.btnPilihPaket.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPilihPaket.ForeColor = System.Drawing.Color.White;
+            this.btnPilihPaket.Image = ((System.Drawing.Image)(resources.GetObject("btnPilihPaket.Image")));
+            this.btnPilihPaket.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnPilihPaket.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnPilihPaket.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnPilihPaket.Location = new System.Drawing.Point(272, 120);
+            this.btnPilihPaket.Name = "btnPilihPaket";
+            this.btnPilihPaket.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnPilihPaket.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnPilihPaket.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnPilihPaket.OnHoverImage = null;
+            this.btnPilihPaket.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnPilihPaket.OnPressedColor = System.Drawing.Color.Black;
+            this.btnPilihPaket.Size = new System.Drawing.Size(32, 32);
+            this.btnPilihPaket.TabIndex = 12;
+            this.btnPilihPaket.Click += new System.EventHandler(this.btnPilihPaket_Click);
+            // 
+            // btnPilihOutlet
+            // 
+            this.btnPilihOutlet.AnimationHoverSpeed = 0.07F;
+            this.btnPilihOutlet.AnimationSpeed = 0.03F;
+            this.btnPilihOutlet.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnPilihOutlet.BorderColor = System.Drawing.Color.Black;
+            this.btnPilihOutlet.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnPilihOutlet.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnPilihOutlet.CheckedForeColor = System.Drawing.Color.White;
+            this.btnPilihOutlet.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnPilihOutlet.CheckedImage")));
+            this.btnPilihOutlet.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnPilihOutlet.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnPilihOutlet.FocusedColor = System.Drawing.Color.Empty;
+            this.btnPilihOutlet.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPilihOutlet.ForeColor = System.Drawing.Color.White;
+            this.btnPilihOutlet.Image = ((System.Drawing.Image)(resources.GetObject("btnPilihOutlet.Image")));
+            this.btnPilihOutlet.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnPilihOutlet.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnPilihOutlet.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnPilihOutlet.Location = new System.Drawing.Point(272, 65);
+            this.btnPilihOutlet.Name = "btnPilihOutlet";
+            this.btnPilihOutlet.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnPilihOutlet.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnPilihOutlet.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnPilihOutlet.OnHoverImage = null;
+            this.btnPilihOutlet.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnPilihOutlet.OnPressedColor = System.Drawing.Color.Black;
+            this.btnPilihOutlet.Size = new System.Drawing.Size(31, 31);
+            this.btnPilihOutlet.TabIndex = 0;
+            // 
+            // gunaButton1
+            // 
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
+            this.gunaButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton1.Location = new System.Drawing.Point(0, 0);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton1.Size = new System.Drawing.Size(332, 42);
+            this.gunaButton1.TabIndex = 5;
+            this.gunaButton1.Text = "Paket";
+            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // cmbOutlet
             // 
             this.cmbOutlet.BackColor = System.Drawing.Color.Transparent;
@@ -219,158 +281,74 @@
             this.panel3.Size = new System.Drawing.Size(636, 346);
             this.panel3.TabIndex = 12;
             // 
-            // gunaButton2
+            // txtKeterangan
             // 
-            this.gunaButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaButton2.AnimationSpeed = 0.03F;
-            this.gunaButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.gunaButton2.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton2.ForeColor = System.Drawing.Color.White;
-            this.gunaButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton2.Image")));
-            this.gunaButton2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton2.Location = new System.Drawing.Point(0, 0);
-            this.gunaButton2.Name = "gunaButton2";
-            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton2.OnHoverImage = null;
-            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.Size = new System.Drawing.Size(636, 42);
-            this.gunaButton2.TabIndex = 5;
-            this.gunaButton2.Text = "Transaksi";
-            this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKeterangan.BaseColor = System.Drawing.Color.White;
+            this.txtKeterangan.BorderColor = System.Drawing.Color.Silver;
+            this.txtKeterangan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtKeterangan.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtKeterangan.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtKeterangan.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtKeterangan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtKeterangan.Location = new System.Drawing.Point(346, 258);
+            this.txtKeterangan.Name = "txtKeterangan";
+            this.txtKeterangan.PasswordChar = '\0';
+            this.txtKeterangan.Size = new System.Drawing.Size(284, 88);
+            this.txtKeterangan.TabIndex = 20;
             // 
-            // gunaGroupBox1
+            // label7
             // 
-            this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaGroupBox1.BorderColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox1.Controls.Add(this.btnBiayaTambahan);
-            this.gunaGroupBox1.Controls.Add(this.btnPajak);
-            this.gunaGroupBox1.Controls.Add(this.btnDiskon);
-            this.gunaGroupBox1.Controls.Add(this.btnCariPelanggan);
-            this.gunaGroupBox1.Controls.Add(this.txtBiayaTambahan);
-            this.gunaGroupBox1.Controls.Add(this.txtPajak);
-            this.gunaGroupBox1.Controls.Add(this.label6);
-            this.gunaGroupBox1.Controls.Add(this.label5);
-            this.gunaGroupBox1.Controls.Add(this.txtDiskon);
-            this.gunaGroupBox1.Controls.Add(this.label4);
-            this.gunaGroupBox1.Controls.Add(this.txtPelanggan);
-            this.gunaGroupBox1.Controls.Add(this.label3);
-            this.gunaGroupBox1.LineColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox1.Location = new System.Drawing.Point(3, 48);
-            this.gunaGroupBox1.Name = "gunaGroupBox1";
-            this.gunaGroupBox1.Size = new System.Drawing.Size(322, 295);
-            this.gunaGroupBox1.TabIndex = 13;
-            this.gunaGroupBox1.Text = "Input";
-            this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(343, 238);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(82, 17);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Keterangan";
             // 
-            // txtPelanggan
+            // gunaGroupBox2
             // 
-            this.txtPelanggan.BaseColor = System.Drawing.Color.White;
-            this.txtPelanggan.BorderColor = System.Drawing.Color.Silver;
-            this.txtPelanggan.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPelanggan.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtPelanggan.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtPelanggan.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtPelanggan.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPelanggan.Location = new System.Drawing.Point(24, 62);
-            this.txtPelanggan.Name = "txtPelanggan";
-            this.txtPelanggan.PasswordChar = '\0';
-            this.txtPelanggan.Size = new System.Drawing.Size(250, 32);
-            this.txtPelanggan.TabIndex = 15;
+            this.gunaGroupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGroupBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaGroupBox2.BorderColor = System.Drawing.Color.Gainsboro;
+            this.gunaGroupBox2.Controls.Add(this.gunaWinSwitch1);
+            this.gunaGroupBox2.Controls.Add(this.label8);
+            this.gunaGroupBox2.Controls.Add(this.label9);
+            this.gunaGroupBox2.LineColor = System.Drawing.Color.Gainsboro;
+            this.gunaGroupBox2.Location = new System.Drawing.Point(346, 148);
+            this.gunaGroupBox2.Name = "gunaGroupBox2";
+            this.gunaGroupBox2.Size = new System.Drawing.Size(284, 87);
+            this.gunaGroupBox2.TabIndex = 14;
+            this.gunaGroupBox2.Text = "Pembayaran";
+            this.gunaGroupBox2.TextLocation = new System.Drawing.Point(10, 8);
             // 
-            // label3
+            // gunaWinSwitch1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 42);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 17);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Cari Pelanggan";
+            this.gunaWinSwitch1.BaseColor = System.Drawing.SystemColors.Control;
+            this.gunaWinSwitch1.CheckedOffColor = System.Drawing.Color.DarkGray;
+            this.gunaWinSwitch1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaWinSwitch1.FillColor = System.Drawing.Color.White;
+            this.gunaWinSwitch1.Location = new System.Drawing.Point(94, 42);
+            this.gunaWinSwitch1.Name = "gunaWinSwitch1";
+            this.gunaWinSwitch1.Size = new System.Drawing.Size(62, 42);
+            this.gunaWinSwitch1.TabIndex = 13;
             // 
-            // txtDiskon
+            // label8
             // 
-            this.txtDiskon.BaseColor = System.Drawing.Color.White;
-            this.txtDiskon.BorderColor = System.Drawing.Color.Silver;
-            this.txtDiskon.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDiskon.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtDiskon.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDiskon.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtDiskon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDiskon.Location = new System.Drawing.Point(24, 120);
-            this.txtDiskon.Name = "txtDiskon";
-            this.txtDiskon.PasswordChar = '\0';
-            this.txtDiskon.Size = new System.Drawing.Size(250, 32);
-            this.txtDiskon.TabIndex = 17;
-            this.txtDiskon.TextChanged += new System.EventHandler(this.txtDiskon_TextChanged);
-            this.txtDiskon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiskon_KeyPress);
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 46);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(41, 17);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Nanti";
             // 
-            // label4
+            // label9
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 100);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 17);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Diskon";
-            // 
-            // txtPajak
-            // 
-            this.txtPajak.BaseColor = System.Drawing.Color.White;
-            this.txtPajak.BorderColor = System.Drawing.Color.Silver;
-            this.txtPajak.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPajak.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtPajak.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtPajak.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtPajak.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPajak.Location = new System.Drawing.Point(24, 175);
-            this.txtPajak.Name = "txtPajak";
-            this.txtPajak.PasswordChar = '\0';
-            this.txtPajak.Size = new System.Drawing.Size(250, 32);
-            this.txtPajak.TabIndex = 19;
-            this.txtPajak.TextChanged += new System.EventHandler(this.txtPajak_TextChanged);
-            this.txtPajak.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPajak_KeyPress);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 155);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 17);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Pajak";
-            // 
-            // txtBiayaTambahan
-            // 
-            this.txtBiayaTambahan.BaseColor = System.Drawing.Color.White;
-            this.txtBiayaTambahan.BorderColor = System.Drawing.Color.Silver;
-            this.txtBiayaTambahan.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBiayaTambahan.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtBiayaTambahan.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtBiayaTambahan.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtBiayaTambahan.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBiayaTambahan.Location = new System.Drawing.Point(24, 230);
-            this.txtBiayaTambahan.Name = "txtBiayaTambahan";
-            this.txtBiayaTambahan.PasswordChar = '\0';
-            this.txtBiayaTambahan.Size = new System.Drawing.Size(250, 32);
-            this.txtBiayaTambahan.TabIndex = 17;
-            this.txtBiayaTambahan.TextChanged += new System.EventHandler(this.txtBiayaTambahan_TextChanged);
-            this.txtBiayaTambahan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBiayaTambahan_KeyPress);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 210);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(115, 17);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Biaya Tambahan";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(199, 46);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(71, 17);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Langsung";
             // 
             // gunaGroupBox3
             // 
@@ -408,74 +386,282 @@
             this.gunaDateTimePicker1.Text = "Minggu, 21 Maret 2021";
             this.gunaDateTimePicker1.Value = new System.DateTime(2021, 3, 21, 20, 39, 55, 720);
             // 
-            // gunaGroupBox2
+            // gunaGroupBox1
             // 
-            this.gunaGroupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaGroupBox2.BorderColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox2.Controls.Add(this.gunaWinSwitch1);
-            this.gunaGroupBox2.Controls.Add(this.label8);
-            this.gunaGroupBox2.Controls.Add(this.label9);
-            this.gunaGroupBox2.LineColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox2.Location = new System.Drawing.Point(346, 148);
-            this.gunaGroupBox2.Name = "gunaGroupBox2";
-            this.gunaGroupBox2.Size = new System.Drawing.Size(284, 87);
-            this.gunaGroupBox2.TabIndex = 14;
-            this.gunaGroupBox2.Text = "Pembayaran";
-            this.gunaGroupBox2.TextLocation = new System.Drawing.Point(10, 8);
+            this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaGroupBox1.BorderColor = System.Drawing.Color.Gainsboro;
+            this.gunaGroupBox1.Controls.Add(this.btnBiayaTambahan);
+            this.gunaGroupBox1.Controls.Add(this.btnPajak);
+            this.gunaGroupBox1.Controls.Add(this.btnDiskon);
+            this.gunaGroupBox1.Controls.Add(this.btnCariPelanggan);
+            this.gunaGroupBox1.Controls.Add(this.txtBiayaTambahan);
+            this.gunaGroupBox1.Controls.Add(this.txtPajak);
+            this.gunaGroupBox1.Controls.Add(this.label6);
+            this.gunaGroupBox1.Controls.Add(this.label5);
+            this.gunaGroupBox1.Controls.Add(this.txtDiskon);
+            this.gunaGroupBox1.Controls.Add(this.label4);
+            this.gunaGroupBox1.Controls.Add(this.txtPelanggan);
+            this.gunaGroupBox1.Controls.Add(this.label3);
+            this.gunaGroupBox1.LineColor = System.Drawing.Color.Gainsboro;
+            this.gunaGroupBox1.Location = new System.Drawing.Point(3, 48);
+            this.gunaGroupBox1.Name = "gunaGroupBox1";
+            this.gunaGroupBox1.Size = new System.Drawing.Size(322, 295);
+            this.gunaGroupBox1.TabIndex = 13;
+            this.gunaGroupBox1.Text = "Input";
+            this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
             // 
-            // label7
+            // btnBiayaTambahan
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(343, 238);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 17);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Keterangan";
+            this.btnBiayaTambahan.AnimationHoverSpeed = 0.07F;
+            this.btnBiayaTambahan.AnimationSpeed = 0.03F;
+            this.btnBiayaTambahan.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnBiayaTambahan.BorderColor = System.Drawing.Color.Black;
+            this.btnBiayaTambahan.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnBiayaTambahan.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnBiayaTambahan.CheckedForeColor = System.Drawing.Color.White;
+            this.btnBiayaTambahan.CheckedImage = null;
+            this.btnBiayaTambahan.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnBiayaTambahan.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnBiayaTambahan.FocusedColor = System.Drawing.Color.Empty;
+            this.btnBiayaTambahan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBiayaTambahan.ForeColor = System.Drawing.Color.White;
+            this.btnBiayaTambahan.Image = null;
+            this.btnBiayaTambahan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBiayaTambahan.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnBiayaTambahan.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnBiayaTambahan.Location = new System.Drawing.Point(280, 230);
+            this.btnBiayaTambahan.Name = "btnBiayaTambahan";
+            this.btnBiayaTambahan.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnBiayaTambahan.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnBiayaTambahan.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnBiayaTambahan.OnHoverImage = null;
+            this.btnBiayaTambahan.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnBiayaTambahan.OnPressedColor = System.Drawing.Color.Black;
+            this.btnBiayaTambahan.Size = new System.Drawing.Size(32, 32);
+            this.btnBiayaTambahan.TabIndex = 22;
+            this.btnBiayaTambahan.Text = "%";
             // 
-            // txtKeterangan
+            // btnPajak
             // 
-            this.txtKeterangan.BaseColor = System.Drawing.Color.White;
-            this.txtKeterangan.BorderColor = System.Drawing.Color.Silver;
-            this.txtKeterangan.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtKeterangan.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtKeterangan.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtKeterangan.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtKeterangan.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtKeterangan.Location = new System.Drawing.Point(346, 258);
-            this.txtKeterangan.Name = "txtKeterangan";
-            this.txtKeterangan.PasswordChar = '\0';
-            this.txtKeterangan.Size = new System.Drawing.Size(284, 88);
-            this.txtKeterangan.TabIndex = 20;
+            this.btnPajak.AnimationHoverSpeed = 0.07F;
+            this.btnPajak.AnimationSpeed = 0.03F;
+            this.btnPajak.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnPajak.BorderColor = System.Drawing.Color.Black;
+            this.btnPajak.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnPajak.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnPajak.CheckedForeColor = System.Drawing.Color.White;
+            this.btnPajak.CheckedImage = null;
+            this.btnPajak.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnPajak.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnPajak.FocusedColor = System.Drawing.Color.Empty;
+            this.btnPajak.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPajak.ForeColor = System.Drawing.Color.White;
+            this.btnPajak.Image = null;
+            this.btnPajak.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnPajak.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnPajak.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnPajak.Location = new System.Drawing.Point(280, 175);
+            this.btnPajak.Name = "btnPajak";
+            this.btnPajak.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnPajak.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnPajak.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnPajak.OnHoverImage = null;
+            this.btnPajak.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnPajak.OnPressedColor = System.Drawing.Color.Black;
+            this.btnPajak.Size = new System.Drawing.Size(32, 32);
+            this.btnPajak.TabIndex = 21;
+            this.btnPajak.Text = "%";
             // 
-            // label8
+            // btnDiskon
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 46);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 17);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "Nanti";
+            this.btnDiskon.AnimationHoverSpeed = 0.07F;
+            this.btnDiskon.AnimationSpeed = 0.03F;
+            this.btnDiskon.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnDiskon.BorderColor = System.Drawing.Color.Black;
+            this.btnDiskon.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnDiskon.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnDiskon.CheckedForeColor = System.Drawing.Color.White;
+            this.btnDiskon.CheckedImage = null;
+            this.btnDiskon.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnDiskon.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnDiskon.FocusedColor = System.Drawing.Color.Empty;
+            this.btnDiskon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDiskon.ForeColor = System.Drawing.Color.White;
+            this.btnDiskon.Image = null;
+            this.btnDiskon.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnDiskon.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnDiskon.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnDiskon.Location = new System.Drawing.Point(280, 120);
+            this.btnDiskon.Name = "btnDiskon";
+            this.btnDiskon.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnDiskon.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnDiskon.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnDiskon.OnHoverImage = null;
+            this.btnDiskon.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnDiskon.OnPressedColor = System.Drawing.Color.Black;
+            this.btnDiskon.Size = new System.Drawing.Size(32, 32);
+            this.btnDiskon.TabIndex = 20;
+            this.btnDiskon.Text = "%";
             // 
-            // label9
+            // btnCariPelanggan
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(199, 46);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 17);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "Langsung";
+            this.btnCariPelanggan.AnimationHoverSpeed = 0.07F;
+            this.btnCariPelanggan.AnimationSpeed = 0.03F;
+            this.btnCariPelanggan.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnCariPelanggan.BorderColor = System.Drawing.Color.Black;
+            this.btnCariPelanggan.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnCariPelanggan.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnCariPelanggan.CheckedForeColor = System.Drawing.Color.White;
+            this.btnCariPelanggan.CheckedImage = null;
+            this.btnCariPelanggan.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnCariPelanggan.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnCariPelanggan.FocusedColor = System.Drawing.Color.Empty;
+            this.btnCariPelanggan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCariPelanggan.ForeColor = System.Drawing.Color.White;
+            this.btnCariPelanggan.Image = ((System.Drawing.Image)(resources.GetObject("btnCariPelanggan.Image")));
+            this.btnCariPelanggan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnCariPelanggan.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnCariPelanggan.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnCariPelanggan.Location = new System.Drawing.Point(280, 62);
+            this.btnCariPelanggan.Name = "btnCariPelanggan";
+            this.btnCariPelanggan.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnCariPelanggan.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnCariPelanggan.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnCariPelanggan.OnHoverImage = null;
+            this.btnCariPelanggan.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnCariPelanggan.OnPressedColor = System.Drawing.Color.Black;
+            this.btnCariPelanggan.Size = new System.Drawing.Size(32, 32);
+            this.btnCariPelanggan.TabIndex = 13;
+            this.btnCariPelanggan.Click += new System.EventHandler(this.btnCariPelanggan_Click);
             // 
-            // gunaWinSwitch1
+            // txtBiayaTambahan
             // 
-            this.gunaWinSwitch1.BaseColor = System.Drawing.SystemColors.Control;
-            this.gunaWinSwitch1.CheckedOffColor = System.Drawing.Color.DarkGray;
-            this.gunaWinSwitch1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaWinSwitch1.FillColor = System.Drawing.Color.White;
-            this.gunaWinSwitch1.Location = new System.Drawing.Point(94, 42);
-            this.gunaWinSwitch1.Name = "gunaWinSwitch1";
-            this.gunaWinSwitch1.Size = new System.Drawing.Size(62, 42);
-            this.gunaWinSwitch1.TabIndex = 13;
+            this.txtBiayaTambahan.BaseColor = System.Drawing.Color.White;
+            this.txtBiayaTambahan.BorderColor = System.Drawing.Color.Silver;
+            this.txtBiayaTambahan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBiayaTambahan.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtBiayaTambahan.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtBiayaTambahan.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtBiayaTambahan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtBiayaTambahan.Location = new System.Drawing.Point(24, 230);
+            this.txtBiayaTambahan.Name = "txtBiayaTambahan";
+            this.txtBiayaTambahan.PasswordChar = '\0';
+            this.txtBiayaTambahan.Size = new System.Drawing.Size(250, 32);
+            this.txtBiayaTambahan.TabIndex = 17;
+            this.txtBiayaTambahan.TextChanged += new System.EventHandler(this.txtBiayaTambahan_TextChanged);
+            this.txtBiayaTambahan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBiayaTambahan_KeyPress);
+            // 
+            // txtPajak
+            // 
+            this.txtPajak.BaseColor = System.Drawing.Color.White;
+            this.txtPajak.BorderColor = System.Drawing.Color.Silver;
+            this.txtPajak.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPajak.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtPajak.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtPajak.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtPajak.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPajak.Location = new System.Drawing.Point(24, 175);
+            this.txtPajak.Name = "txtPajak";
+            this.txtPajak.PasswordChar = '\0';
+            this.txtPajak.Size = new System.Drawing.Size(250, 32);
+            this.txtPajak.TabIndex = 19;
+            this.txtPajak.TextChanged += new System.EventHandler(this.txtPajak_TextChanged);
+            this.txtPajak.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPajak_KeyPress);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(21, 210);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(115, 17);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Biaya Tambahan";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(21, 155);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(43, 17);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Pajak";
+            // 
+            // txtDiskon
+            // 
+            this.txtDiskon.BaseColor = System.Drawing.Color.White;
+            this.txtDiskon.BorderColor = System.Drawing.Color.Silver;
+            this.txtDiskon.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDiskon.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtDiskon.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtDiskon.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtDiskon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDiskon.Location = new System.Drawing.Point(24, 120);
+            this.txtDiskon.Name = "txtDiskon";
+            this.txtDiskon.PasswordChar = '\0';
+            this.txtDiskon.Size = new System.Drawing.Size(250, 32);
+            this.txtDiskon.TabIndex = 17;
+            this.txtDiskon.TextChanged += new System.EventHandler(this.txtDiskon_TextChanged);
+            this.txtDiskon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiskon_KeyPress);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(21, 100);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 17);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Diskon";
+            // 
+            // txtPelanggan
+            // 
+            this.txtPelanggan.BaseColor = System.Drawing.Color.White;
+            this.txtPelanggan.BorderColor = System.Drawing.Color.Silver;
+            this.txtPelanggan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPelanggan.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtPelanggan.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtPelanggan.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtPelanggan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPelanggan.Location = new System.Drawing.Point(24, 62);
+            this.txtPelanggan.Name = "txtPelanggan";
+            this.txtPelanggan.PasswordChar = '\0';
+            this.txtPelanggan.Size = new System.Drawing.Size(250, 32);
+            this.txtPelanggan.TabIndex = 15;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(21, 42);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 17);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Cari Pelanggan";
+            // 
+            // gunaButton2
+            // 
+            this.gunaButton2.AnimationHoverSpeed = 0.07F;
+            this.gunaButton2.AnimationSpeed = 0.03F;
+            this.gunaButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.gunaButton2.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton2.ForeColor = System.Drawing.Color.White;
+            this.gunaButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton2.Image")));
+            this.gunaButton2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton2.Location = new System.Drawing.Point(0, 0);
+            this.gunaButton2.Name = "gunaButton2";
+            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton2.OnHoverImage = null;
+            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton2.Size = new System.Drawing.Size(636, 42);
+            this.gunaButton2.TabIndex = 5;
+            this.gunaButton2.Text = "Transaksi";
+            this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel4
             // 
@@ -486,112 +672,52 @@
             this.panel4.Size = new System.Drawing.Size(332, 241);
             this.panel4.TabIndex = 12;
             // 
-            // gunaButton3
-            // 
-            this.gunaButton3.AnimationHoverSpeed = 0.07F;
-            this.gunaButton3.AnimationSpeed = 0.03F;
-            this.gunaButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaButton3.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton3.ForeColor = System.Drawing.Color.White;
-            this.gunaButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton3.Image")));
-            this.gunaButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton3.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton3.Location = new System.Drawing.Point(0, 0);
-            this.gunaButton3.Name = "gunaButton3";
-            this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton3.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton3.OnHoverImage = null;
-            this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton3.Size = new System.Drawing.Size(332, 42);
-            this.gunaButton3.TabIndex = 5;
-            this.gunaButton3.Text = "Daftar Paket";
-            this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.tableLayoutPanel1);
-            this.panel5.Controls.Add(this.gunaButton4);
-            this.panel5.Location = new System.Drawing.Point(700, 372);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(298, 241);
-            this.panel5.TabIndex = 13;
-            // 
-            // gunaButton4
-            // 
-            this.gunaButton4.AnimationHoverSpeed = 0.07F;
-            this.gunaButton4.AnimationSpeed = 0.03F;
-            this.gunaButton4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaButton4.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton4.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton4.ForeColor = System.Drawing.Color.White;
-            this.gunaButton4.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton4.Image")));
-            this.gunaButton4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton4.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton4.Location = new System.Drawing.Point(0, 0);
-            this.gunaButton4.Name = "gunaButton4";
-            this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton4.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton4.OnHoverImage = null;
-            this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton4.Size = new System.Drawing.Size(298, 42);
-            this.gunaButton4.TabIndex = 5;
-            this.gunaButton4.Text = "Tagihan";
-            this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // dataTableEntriTransaksi
             // 
             this.dataTableEntriTransaksi.AllowUserToAddRows = false;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
-            this.dataTableEntriTransaksi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dataTableEntriTransaksi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataTableEntriTransaksi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataTableEntriTransaksi.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataTableEntriTransaksi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataTableEntriTransaksi.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataTableEntriTransaksi.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataTableEntriTransaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataTableEntriTransaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataTableEntriTransaksi.ColumnHeadersHeight = 27;
             this.dataTableEntriTransaksi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnId,
             this.ColumnPaket,
             this.ColumnQty,
             this.ColumnHarga,
             this.ColumnAction});
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataTableEntriTransaksi.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataTableEntriTransaksi.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataTableEntriTransaksi.EnableHeadersVisualStyles = false;
             this.dataTableEntriTransaksi.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataTableEntriTransaksi.Location = new System.Drawing.Point(3, 48);
             this.dataTableEntriTransaksi.Name = "dataTableEntriTransaksi";
             this.dataTableEntriTransaksi.ReadOnly = true;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataTableEntriTransaksi.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataTableEntriTransaksi.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataTableEntriTransaksi.RowHeadersVisible = false;
             this.dataTableEntriTransaksi.RowHeadersWidth = 51;
             this.dataTableEntriTransaksi.RowTemplate.Height = 24;
@@ -624,6 +750,14 @@
             this.dataTableEntriTransaksi.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataTableEntriTransaksi_RowsAdded);
             this.dataTableEntriTransaksi.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dataTableEntriTransaksi_RowsRemoved);
             // 
+            // ColumnId
+            // 
+            this.ColumnId.HeaderText = "Id";
+            this.ColumnId.MinimumWidth = 6;
+            this.ColumnId.Name = "ColumnId";
+            this.ColumnId.ReadOnly = true;
+            this.ColumnId.Visible = false;
+            // 
             // ColumnPaket
             // 
             this.ColumnPaket.HeaderText = "Paket";
@@ -652,6 +786,41 @@
             this.ColumnAction.Name = "ColumnAction";
             this.ColumnAction.ReadOnly = true;
             // 
+            // gunaButton3
+            // 
+            this.gunaButton3.AnimationHoverSpeed = 0.07F;
+            this.gunaButton3.AnimationSpeed = 0.03F;
+            this.gunaButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaButton3.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton3.ForeColor = System.Drawing.Color.White;
+            this.gunaButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton3.Image")));
+            this.gunaButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton3.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton3.Location = new System.Drawing.Point(0, 0);
+            this.gunaButton3.Name = "gunaButton3";
+            this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton3.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton3.OnHoverImage = null;
+            this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton3.Size = new System.Drawing.Size(332, 42);
+            this.gunaButton3.TabIndex = 5;
+            this.gunaButton3.Text = "Daftar Paket";
+            this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.tableLayoutPanel1);
+            this.panel5.Controls.Add(this.gunaButton4);
+            this.panel5.Location = new System.Drawing.Point(700, 372);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(298, 241);
+            this.panel5.TabIndex = 13;
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
@@ -678,6 +847,61 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(298, 193);
             this.tableLayoutPanel1.TabIndex = 6;
+            // 
+            // labelBiayaTambahan
+            // 
+            this.labelBiayaTambahan.AutoSize = true;
+            this.labelBiayaTambahan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelBiayaTambahan.Location = new System.Drawing.Point(152, 81);
+            this.labelBiayaTambahan.Name = "labelBiayaTambahan";
+            this.labelBiayaTambahan.Size = new System.Drawing.Size(143, 27);
+            this.labelBiayaTambahan.TabIndex = 28;
+            this.labelBiayaTambahan.Text = "0";
+            this.labelBiayaTambahan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // labelPajak
+            // 
+            this.labelPajak.AutoSize = true;
+            this.labelPajak.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelPajak.Location = new System.Drawing.Point(152, 54);
+            this.labelPajak.Name = "labelPajak";
+            this.labelPajak.Size = new System.Drawing.Size(143, 27);
+            this.labelPajak.TabIndex = 27;
+            this.labelPajak.Text = "0";
+            this.labelPajak.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // labelDiskon
+            // 
+            this.labelDiskon.AutoSize = true;
+            this.labelDiskon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelDiskon.Location = new System.Drawing.Point(152, 27);
+            this.labelDiskon.Name = "labelDiskon";
+            this.labelDiskon.Size = new System.Drawing.Size(143, 27);
+            this.labelDiskon.TabIndex = 26;
+            this.labelDiskon.Text = "0";
+            this.labelDiskon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // labelHargaCucian
+            // 
+            this.labelHargaCucian.AutoSize = true;
+            this.labelHargaCucian.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelHargaCucian.Location = new System.Drawing.Point(152, 0);
+            this.labelHargaCucian.Name = "labelHargaCucian";
+            this.labelHargaCucian.Size = new System.Drawing.Size(143, 27);
+            this.labelHargaCucian.TabIndex = 25;
+            this.labelHargaCucian.Text = "0";
+            this.labelHargaCucian.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label13.Location = new System.Drawing.Point(3, 27);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(143, 27);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "Diskon";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label10
             // 
@@ -712,17 +936,6 @@
             this.label12.Text = "Total";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Location = new System.Drawing.Point(3, 27);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(143, 27);
-            this.label13.TabIndex = 23;
-            this.label13.Text = "Diskon";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -734,50 +947,6 @@
             this.label14.Text = "Biaya Tambahan";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // labelHargaCucian
-            // 
-            this.labelHargaCucian.AutoSize = true;
-            this.labelHargaCucian.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelHargaCucian.Location = new System.Drawing.Point(152, 0);
-            this.labelHargaCucian.Name = "labelHargaCucian";
-            this.labelHargaCucian.Size = new System.Drawing.Size(143, 27);
-            this.labelHargaCucian.TabIndex = 25;
-            this.labelHargaCucian.Text = "0";
-            this.labelHargaCucian.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // labelDiskon
-            // 
-            this.labelDiskon.AutoSize = true;
-            this.labelDiskon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelDiskon.Location = new System.Drawing.Point(152, 27);
-            this.labelDiskon.Name = "labelDiskon";
-            this.labelDiskon.Size = new System.Drawing.Size(143, 27);
-            this.labelDiskon.TabIndex = 26;
-            this.labelDiskon.Text = "0";
-            this.labelDiskon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // labelPajak
-            // 
-            this.labelPajak.AutoSize = true;
-            this.labelPajak.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelPajak.Location = new System.Drawing.Point(152, 54);
-            this.labelPajak.Name = "labelPajak";
-            this.labelPajak.Size = new System.Drawing.Size(143, 27);
-            this.labelPajak.TabIndex = 27;
-            this.labelPajak.Text = "0";
-            this.labelPajak.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // labelBiayaTambahan
-            // 
-            this.labelBiayaTambahan.AutoSize = true;
-            this.labelBiayaTambahan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelBiayaTambahan.Location = new System.Drawing.Point(152, 81);
-            this.labelBiayaTambahan.Name = "labelBiayaTambahan";
-            this.labelBiayaTambahan.Size = new System.Drawing.Size(143, 27);
-            this.labelBiayaTambahan.TabIndex = 28;
-            this.labelBiayaTambahan.Text = "0";
-            this.labelBiayaTambahan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // labelTotal
             // 
             this.labelTotal.AutoSize = true;
@@ -788,6 +957,32 @@
             this.labelTotal.TabIndex = 29;
             this.labelTotal.Text = "0";
             this.labelTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // gunaButton4
+            // 
+            this.gunaButton4.AnimationHoverSpeed = 0.07F;
+            this.gunaButton4.AnimationSpeed = 0.03F;
+            this.gunaButton4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaButton4.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton4.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton4.ForeColor = System.Drawing.Color.White;
+            this.gunaButton4.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton4.Image")));
+            this.gunaButton4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton4.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton4.Location = new System.Drawing.Point(0, 0);
+            this.gunaButton4.Name = "gunaButton4";
+            this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton4.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton4.OnHoverImage = null;
+            this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton4.Size = new System.Drawing.Size(298, 42);
+            this.gunaButton4.TabIndex = 5;
+            this.gunaButton4.Text = "Tagihan";
+            this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtIdPelanggan
             // 
@@ -806,191 +1001,11 @@
             this.txtIdPelanggan.Text = "gunaTextBox7";
             this.txtIdPelanggan.Visible = false;
             // 
-            // btnPilihOutlet
-            // 
-            this.btnPilihOutlet.AnimationHoverSpeed = 0.07F;
-            this.btnPilihOutlet.AnimationSpeed = 0.03F;
-            this.btnPilihOutlet.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnPilihOutlet.BorderColor = System.Drawing.Color.Black;
-            this.btnPilihOutlet.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnPilihOutlet.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnPilihOutlet.CheckedForeColor = System.Drawing.Color.White;
-            this.btnPilihOutlet.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnPilihOutlet.CheckedImage")));
-            this.btnPilihOutlet.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnPilihOutlet.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnPilihOutlet.FocusedColor = System.Drawing.Color.Empty;
-            this.btnPilihOutlet.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnPilihOutlet.ForeColor = System.Drawing.Color.White;
-            this.btnPilihOutlet.Image = ((System.Drawing.Image)(resources.GetObject("btnPilihOutlet.Image")));
-            this.btnPilihOutlet.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnPilihOutlet.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnPilihOutlet.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnPilihOutlet.Location = new System.Drawing.Point(272, 65);
-            this.btnPilihOutlet.Name = "btnPilihOutlet";
-            this.btnPilihOutlet.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnPilihOutlet.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnPilihOutlet.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnPilihOutlet.OnHoverImage = null;
-            this.btnPilihOutlet.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnPilihOutlet.OnPressedColor = System.Drawing.Color.Black;
-            this.btnPilihOutlet.Size = new System.Drawing.Size(31, 31);
-            this.btnPilihOutlet.TabIndex = 0;
-            // 
-            // btnPilihPaket
-            // 
-            this.btnPilihPaket.AnimationHoverSpeed = 0.07F;
-            this.btnPilihPaket.AnimationSpeed = 0.03F;
-            this.btnPilihPaket.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnPilihPaket.BorderColor = System.Drawing.Color.Black;
-            this.btnPilihPaket.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnPilihPaket.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnPilihPaket.CheckedForeColor = System.Drawing.Color.White;
-            this.btnPilihPaket.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnPilihPaket.CheckedImage")));
-            this.btnPilihPaket.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnPilihPaket.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnPilihPaket.FocusedColor = System.Drawing.Color.Empty;
-            this.btnPilihPaket.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnPilihPaket.ForeColor = System.Drawing.Color.White;
-            this.btnPilihPaket.Image = ((System.Drawing.Image)(resources.GetObject("btnPilihPaket.Image")));
-            this.btnPilihPaket.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnPilihPaket.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnPilihPaket.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnPilihPaket.Location = new System.Drawing.Point(272, 120);
-            this.btnPilihPaket.Name = "btnPilihPaket";
-            this.btnPilihPaket.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnPilihPaket.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnPilihPaket.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnPilihPaket.OnHoverImage = null;
-            this.btnPilihPaket.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnPilihPaket.OnPressedColor = System.Drawing.Color.Black;
-            this.btnPilihPaket.Size = new System.Drawing.Size(32, 32);
-            this.btnPilihPaket.TabIndex = 12;
-            // 
-            // btnCariPelanggan
-            // 
-            this.btnCariPelanggan.AnimationHoverSpeed = 0.07F;
-            this.btnCariPelanggan.AnimationSpeed = 0.03F;
-            this.btnCariPelanggan.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnCariPelanggan.BorderColor = System.Drawing.Color.Black;
-            this.btnCariPelanggan.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnCariPelanggan.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnCariPelanggan.CheckedForeColor = System.Drawing.Color.White;
-            this.btnCariPelanggan.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnCariPelanggan.CheckedImage")));
-            this.btnCariPelanggan.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnCariPelanggan.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnCariPelanggan.FocusedColor = System.Drawing.Color.Empty;
-            this.btnCariPelanggan.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCariPelanggan.ForeColor = System.Drawing.Color.White;
-            this.btnCariPelanggan.Image = ((System.Drawing.Image)(resources.GetObject("btnCariPelanggan.Image")));
-            this.btnCariPelanggan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnCariPelanggan.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnCariPelanggan.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnCariPelanggan.Location = new System.Drawing.Point(280, 62);
-            this.btnCariPelanggan.Name = "btnCariPelanggan";
-            this.btnCariPelanggan.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnCariPelanggan.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnCariPelanggan.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnCariPelanggan.OnHoverImage = null;
-            this.btnCariPelanggan.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnCariPelanggan.OnPressedColor = System.Drawing.Color.Black;
-            this.btnCariPelanggan.Size = new System.Drawing.Size(32, 32);
-            this.btnCariPelanggan.TabIndex = 13;
-            this.btnCariPelanggan.Click += new System.EventHandler(this.btnCariPelanggan_Click);
-            // 
-            // btnDiskon
-            // 
-            this.btnDiskon.AnimationHoverSpeed = 0.07F;
-            this.btnDiskon.AnimationSpeed = 0.03F;
-            this.btnDiskon.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnDiskon.BorderColor = System.Drawing.Color.Black;
-            this.btnDiskon.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnDiskon.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnDiskon.CheckedForeColor = System.Drawing.Color.White;
-            this.btnDiskon.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnDiskon.CheckedImage")));
-            this.btnDiskon.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnDiskon.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnDiskon.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDiskon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDiskon.ForeColor = System.Drawing.Color.White;
-            this.btnDiskon.Image = ((System.Drawing.Image)(resources.GetObject("btnDiskon.Image")));
-            this.btnDiskon.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnDiskon.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnDiskon.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnDiskon.Location = new System.Drawing.Point(280, 120);
-            this.btnDiskon.Name = "btnDiskon";
-            this.btnDiskon.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnDiskon.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnDiskon.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnDiskon.OnHoverImage = null;
-            this.btnDiskon.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnDiskon.OnPressedColor = System.Drawing.Color.Black;
-            this.btnDiskon.Size = new System.Drawing.Size(32, 32);
-            this.btnDiskon.TabIndex = 20;
-            // 
-            // btnPajak
-            // 
-            this.btnPajak.AnimationHoverSpeed = 0.07F;
-            this.btnPajak.AnimationSpeed = 0.03F;
-            this.btnPajak.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnPajak.BorderColor = System.Drawing.Color.Black;
-            this.btnPajak.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnPajak.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnPajak.CheckedForeColor = System.Drawing.Color.White;
-            this.btnPajak.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnPajak.CheckedImage")));
-            this.btnPajak.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnPajak.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnPajak.FocusedColor = System.Drawing.Color.Empty;
-            this.btnPajak.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnPajak.ForeColor = System.Drawing.Color.White;
-            this.btnPajak.Image = ((System.Drawing.Image)(resources.GetObject("btnPajak.Image")));
-            this.btnPajak.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnPajak.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnPajak.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnPajak.Location = new System.Drawing.Point(280, 175);
-            this.btnPajak.Name = "btnPajak";
-            this.btnPajak.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnPajak.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnPajak.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnPajak.OnHoverImage = null;
-            this.btnPajak.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnPajak.OnPressedColor = System.Drawing.Color.Black;
-            this.btnPajak.Size = new System.Drawing.Size(32, 32);
-            this.btnPajak.TabIndex = 21;
-            // 
-            // btnBiayaTambahan
-            // 
-            this.btnBiayaTambahan.AnimationHoverSpeed = 0.07F;
-            this.btnBiayaTambahan.AnimationSpeed = 0.03F;
-            this.btnBiayaTambahan.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnBiayaTambahan.BorderColor = System.Drawing.Color.Black;
-            this.btnBiayaTambahan.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnBiayaTambahan.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnBiayaTambahan.CheckedForeColor = System.Drawing.Color.White;
-            this.btnBiayaTambahan.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnBiayaTambahan.CheckedImage")));
-            this.btnBiayaTambahan.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnBiayaTambahan.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnBiayaTambahan.FocusedColor = System.Drawing.Color.Empty;
-            this.btnBiayaTambahan.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnBiayaTambahan.ForeColor = System.Drawing.Color.White;
-            this.btnBiayaTambahan.Image = ((System.Drawing.Image)(resources.GetObject("btnBiayaTambahan.Image")));
-            this.btnBiayaTambahan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnBiayaTambahan.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnBiayaTambahan.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnBiayaTambahan.Location = new System.Drawing.Point(280, 230);
-            this.btnBiayaTambahan.Name = "btnBiayaTambahan";
-            this.btnBiayaTambahan.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnBiayaTambahan.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnBiayaTambahan.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnBiayaTambahan.OnHoverImage = null;
-            this.btnBiayaTambahan.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnBiayaTambahan.OnPressedColor = System.Drawing.Color.Black;
-            this.btnBiayaTambahan.Size = new System.Drawing.Size(32, 32);
-            this.btnBiayaTambahan.TabIndex = 22;
-            // 
             // btnTambah
             // 
             this.btnTambah.AnimationHoverSpeed = 0.07F;
             this.btnTambah.AnimationSpeed = 0.03F;
+            this.btnTambah.BackColor = System.Drawing.Color.Transparent;
             this.btnTambah.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnTambah.BorderColor = System.Drawing.Color.Black;
             this.btnTambah.CheckedBaseColor = System.Drawing.Color.Gray;
@@ -1002,7 +1017,7 @@
             this.btnTambah.FocusedColor = System.Drawing.Color.Empty;
             this.btnTambah.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTambah.ForeColor = System.Drawing.Color.White;
-            this.btnTambah.Image = null;
+            this.btnTambah.Image = ((System.Drawing.Image)(resources.GetObject("btnTambah.Image")));
             this.btnTambah.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnTambah.ImageSize = new System.Drawing.Size(20, 20);
             this.btnTambah.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
@@ -1014,11 +1029,11 @@
             this.btnTambah.OnHoverImage = null;
             this.btnTambah.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnTambah.OnPressedColor = System.Drawing.Color.Black;
+            this.btnTambah.Radius = 5;
             this.btnTambah.Size = new System.Drawing.Size(120, 42);
             this.btnTambah.TabIndex = 23;
-            this.btnTambah.Text = "Tambah";
+            this.btnTambah.Text = "Submit";
             this.btnTambah.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnTambah.Visible = false;
             this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
             // 
             // UC_EntriTransaksi
@@ -1040,14 +1055,14 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.gunaGroupBox1.ResumeLayout(false);
-            this.gunaGroupBox1.PerformLayout();
-            this.gunaGroupBox3.ResumeLayout(false);
             this.gunaGroupBox2.ResumeLayout(false);
             this.gunaGroupBox2.PerformLayout();
+            this.gunaGroupBox3.ResumeLayout(false);
+            this.gunaGroupBox1.ResumeLayout(false);
+            this.gunaGroupBox1.PerformLayout();
             this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataTableEntriTransaksi)).EndInit();
+            this.panel5.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -1085,10 +1100,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
         private Guna.UI.WinForms.GunaDataGridView dataTableEntriTransaksi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPaket;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnQty;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnHarga;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnAction;
         private Guna.UI.WinForms.GunaButton gunaButton3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
@@ -1109,7 +1120,12 @@
         private Guna.UI.WinForms.GunaAdvenceButton btnBiayaTambahan;
         private Guna.UI.WinForms.GunaAdvenceButton btnPajak;
         private Guna.UI.WinForms.GunaAdvenceButton btnDiskon;
-        private Guna.UI.WinForms.GunaAdvenceButton btnCariPelanggan;
         private Guna.UI.WinForms.GunaAdvenceButton btnTambah;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPaket;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnQty;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnHarga;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnAction;
+        private Guna.UI.WinForms.GunaAdvenceButton btnCariPelanggan;
     }
 }

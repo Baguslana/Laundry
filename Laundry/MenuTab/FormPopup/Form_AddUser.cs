@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -71,6 +72,11 @@ namespace Laundry.MenuTab
         {
             if (txtUsername.Text.Contains(" ")) return false;
             return true;
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

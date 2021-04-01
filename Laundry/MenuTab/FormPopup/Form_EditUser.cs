@@ -65,5 +65,10 @@ namespace Laundry.MenuTab
             if (txtNama.Text.Length > 0 && txtUsername.Text.Length > 0 && cmbRole.SelectedIndex >= 0 && cmbOutlet.SelectedIndex >= 0) return true;
             return false;
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

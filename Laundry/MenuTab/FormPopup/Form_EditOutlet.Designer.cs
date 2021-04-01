@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_EditOutlet));
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -41,6 +42,7 @@
             this.panelsamping = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.btnEdit = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnBack = new Guna.UI.WinForms.GunaButton();
             this.SuspendLayout();
             // 
             // gunaButton1
@@ -59,14 +61,14 @@
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton1.Location = new System.Drawing.Point(0, 0);
             this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.Gold;
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton1.OnHoverImage = null;
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton1.Size = new System.Drawing.Size(410, 73);
             this.gunaButton1.TabIndex = 36;
-            this.gunaButton1.Text = "Edit Pelanggan";
+            this.gunaButton1.Text = "Edit Outlet";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel1
@@ -163,6 +165,7 @@
             // 
             this.btnEdit.AnimationHoverSpeed = 0.07F;
             this.btnEdit.AnimationSpeed = 0.03F;
+            this.btnEdit.BackColor = System.Drawing.Color.Transparent;
             this.btnEdit.BaseColor = System.Drawing.Color.Gold;
             this.btnEdit.BorderColor = System.Drawing.Color.Black;
             this.btnEdit.CheckedBaseColor = System.Drawing.Color.Gray;
@@ -174,7 +177,7 @@
             this.btnEdit.FocusedColor = System.Drawing.Color.Empty;
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Image = null;
+            this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
             this.btnEdit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnEdit.ImageSize = new System.Drawing.Size(20, 20);
             this.btnEdit.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
@@ -186,11 +189,36 @@
             this.btnEdit.OnHoverImage = null;
             this.btnEdit.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnEdit.OnPressedColor = System.Drawing.Color.Black;
+            this.btnEdit.Radius = 5;
             this.btnEdit.Size = new System.Drawing.Size(120, 42);
             this.btnEdit.TabIndex = 37;
             this.btnEdit.Text = "Edit";
             this.btnEdit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.AnimationHoverSpeed = 0.07F;
+            this.btnBack.AnimationSpeed = 0.03F;
+            this.btnBack.BaseColor = System.Drawing.Color.Gold;
+            this.btnBack.BorderColor = System.Drawing.Color.Black;
+            this.btnBack.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnBack.FocusedColor = System.Drawing.Color.Empty;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBack.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnBack.Location = new System.Drawing.Point(0, 0);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnBack.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnBack.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnBack.OnHoverImage = null;
+            this.btnBack.OnPressedColor = System.Drawing.Color.Black;
+            this.btnBack.Size = new System.Drawing.Size(40, 40);
+            this.btnBack.TabIndex = 39;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // Form_EditOutlet
             // 
@@ -198,6 +226,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(410, 530);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.gunaButton1);
             this.Controls.Add(this.panel1);
@@ -234,5 +263,6 @@
         private System.Windows.Forms.Panel panelsamping;
         private System.Windows.Forms.Label label3;
         private Guna.UI.WinForms.GunaAdvenceButton btnEdit;
+        private Guna.UI.WinForms.GunaButton btnBack;
     }
 }

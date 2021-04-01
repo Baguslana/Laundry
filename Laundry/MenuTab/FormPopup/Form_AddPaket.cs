@@ -85,5 +85,10 @@ namespace Laundry.MenuTab.FormPopup
                 gambar = $"'{Convert.ToBase64String(System.IO.File.ReadAllBytes(browse.FileName))}'";
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

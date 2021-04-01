@@ -14,6 +14,7 @@ namespace Laundry.MenuTab
 {
     public partial class UC_EntriTransaksi : UserControl
     {
+        ClassValidasi validation = new ClassValidasi();
         int id_outlet;
         int id_user;
 
@@ -38,15 +39,18 @@ namespace Laundry.MenuTab
             cmbOutlet.ValueMember = "id";
             cmbOutlet.SelectedIndex = -1;
 
-            if (Session.getUserLogged().Rows[0].Field<string>("role") != "admin")
+            if (Session.getUserLogged().Rows[0].Field<string>("level") != "admin")
             {
-                cmbOutlet.Hide();
+                cmbOutlet.SelectedValue = Session.getUserLogged().Rows[0].Field<int>("id_outlet").ToString();
+                cmbOutlet.Enabled = false;
+                btnPilihOutlet.Enabled = false;
                 id_outlet = Session.getUserLogged().Rows[0].Field<int>("id_outlet");
             }
-
             id_user = Session.getUserLogged().Rows[0].Field<int>("id");
+
             //lblNama.Text = Session.getUserLogged().Rows[0].Field<string>("nama");
             loadItems();
+            //this.KeyPreview = true;
         }
 
         public void generateItem(DataTable dt)
@@ -118,6 +122,7 @@ namespace Laundry.MenuTab
             {
                 e.Handled = true;
             }
+            validation.Batas_Persen(txtDiskon, 100,e);
         }
 
         private void txtPajak_KeyPress(object sender, KeyPressEventArgs e)
@@ -127,6 +132,7 @@ namespace Laundry.MenuTab
             {
                 e.Handled = true;
             }
+            validation.Batas_Persen(txtPajak, 100, e);
         }
 
         private void txtBiayaTambahan_KeyPress(object sender, KeyPressEventArgs e)
@@ -270,65 +276,37 @@ namespace Laundry.MenuTab
             labelBiayaTambahan.Text = "0";
             labelTotal.Text = "0";
 
-            if (Session.getUserLogged().Rows[0].Field<string>("role") == "Admin") cmbOutlet.SelectedIndex = -1;
+            if (Session.getUserLogged().Rows[0].Field<string>("level") == "Admin") cmbOutlet.SelectedIndex = -1;
         }
 
         private void btnTambah_Click(object sender, EventArgs e)
         {
-            /* if (isFilled() && isValid())
+            if (isFilled())
             {
                 int next_id;
+                string outlet = cmbOutlet.SelectedValue.ToString();
+                string pelanggan = txtIdPelanggan.Text;
+                string bataswaktu = gunaDateTimePicker1.Value.ToString("yyMMddHHmm");
+                string iduser = Session.getUserLogged().Rows[0].Field<int>("id").ToString();
+                string ket = txtKeterangan.Text;
+                /*string biayatambahan = txtBiayaTambahan.Text;*/
                 DataTable result = Db.Read("SELECT id FROM tb_transaksi ORDER BY id DESC LIMIT 1");
                 if (result.Rows.Count > 0) next_id = result.Rows[0].Field<int>("id") + 1;
                 else next_id = 1;
 
+
+
+                //Query PROCEDURE
                 if (Db.ExecuteQuery($"ALTER TABLE tb_transaksi AUTO_INCREMENT = {next_id}"))
                 {
-                    string invoice = $"INV{id_outlet}{id_user}{DateTime.Now.ToString("yyMMddHHmm")}";
-                    string now = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-                    diskon = Convert.ToDouble((diskon / tbKeranjang.Rows.Count).ToString().Replace(",", "."));
-                    pajak = Convert.ToDouble((pajak / tbKeranjang.Rows.Count).ToString().Replace(",", "."));
-                    biayaTambahan = Convert.ToDouble((biayaTambahan / tbKeranjang.Rows.Count).ToString().Replace(",", "."));
-                    string tgl_bayar = "null";
-                    string dibayar = "belum";
-
-                    if (SwitchBayarLangsung.Checked)
-                    {
-                        tgl_bayar = $"'{now}'";
-                        dibayar = "lunas";
-                    }
-
-                    foreach (DataGridViewRow row in tbKeranjang.Rows)
-                    {
-                        string id_paket = row.Cells["ColumnId"].Value.ToString();
-                        string qty = row.Cells["ColumnQTY"].Value.ToString().Replace(",", ".");
-                        double total = Convert.ToDouble(row.Cells["ColumnHarga"].Value) + pajak + biayaTambahan - diskon;
-                        if (Db.ExecuteQuery(
-                            $"CALL transaksi({next_id},{id_outlet},'{invoice}', {txtIdPelanggan.Text}, '{now}', '{txtBatasWaktu.Value.ToString("yyyy/MM/dd")}', {tgl_bayar}, '{biayaTambahan}', '{diskon}', '{pajak}', '{total}', 'baru', '{dibayar}', {id_user}, {id_paket}, '{qty}', '{txtKeterangan.Text}')"
-                            )) next_id++;
-                        else MessageBox.Show($"ERROR : {Error.error_msg}");
-                        txtKeterangan.Text = $"CALL transaksi({next_id},{id_outlet},'{invoice}', {txtIdPelanggan.Text}, '{now}', '{txtBatasWaktu.Value.ToString("yyyy/MM/dd")}', '{tgl_bayar}', '{biayaTambahan}', '{diskon}', '{pajak}', '{total}', 'baru', '{dibayar}', {id_user}, {id_paket}, '{qty}', '{txtKeterangan.Text}')";
-                    }
-
-                    //resetTransaksi();
-                }*/
-
-            if (isFilled() && isValid())
-            {
-                int next_id;
-                DataTable result = Db.Read("SELECT id FROM tb_transaksi ORDER BY id DESC LIMIT 1");
-                if (result.Rows.Count > 0) next_id = result.Rows[0].Field<int>("id") + 1;
-                else next_id = 1;
-
-                if (Db.ExecuteQuery($"ALTER TABLE tb_transaksi AUTO_INCREMENT = {next_id}"))
-                {
+                    
                     string invoice = $"INV{id_outlet}{id_user}{DateTime.Now.ToString("yyMMddHHmm")}";
                     string now = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                     diskon = Convert.ToDouble((diskon / dataTableEntriTransaksi.Rows.Count).ToString().Replace(",", "."));
                     pajak = Convert.ToDouble((pajak / dataTableEntriTransaksi.Rows.Count).ToString().Replace(",", "."));
                     biayaTambahan = Convert.ToDouble((biayaTambahan / dataTableEntriTransaksi.Rows.Count).ToString().Replace(",", "."));
                     string tgl_bayar = "null";
-                    string dibayar = "belum_dibayar";
+                    string dibayar = "belum";
 
                     if (gunaWinSwitch1.Checked)
                     {
@@ -341,16 +319,22 @@ namespace Laundry.MenuTab
                         string id_paket = row.Cells["ColumnId"].Value.ToString();
                         string qty = row.Cells["ColumnQTY"].Value.ToString().Replace(",", ".");
                         double total = Convert.ToDouble(row.Cells["ColumnHarga"].Value) + pajak + biayaTambahan - diskon;
-                        if (Db.ExecuteQuery(
-                            $"CALL transaksi({next_id}, {id_outlet}, '{invoice}', {txtIdPelanggan.Text}, '{now}', '{gunaDateTimePicker1.Value.ToString("yyyy/MM/dd")}', {tgl_bayar}, '{biayaTambahan}', '{diskon}', '{pajak}', '{total}', 'baru', '{dibayar}', {id_user}, {id_paket}, '{qty}', '{txtKeterangan.Text}')"
-                            )) next_id++;
-                        else MessageBox.Show($"ERROR : {Error.error_msg}");
+                        if (Db.Insert("tb_transaksi", $"null, '{outlet}','{invoice}','{pelanggan}', '{now}','{bataswaktu}',{tgl_bayar},'{biayaTambahan}','{diskon}','{pajak}','{total}', 'baru','{dibayar}','{iduser}'")
+                            && Db.Insert("tb_detail_transaksi", $"null, '{next_id}','{id_paket}','{qty}','{ket}'")) next_id++;
+                        else
+                        {
+                            MessageBox.Show($"ERROR : {Error.error_msg}");
+                        }
                     }
-
                     resetTransaksi();
                     MessageBox.Show("Transaksi Telah Ditambahkan", "PEMBERITAHUAN", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
+        }
+
+        private void btnPilihPaket_Click(object sender, EventArgs e)
+        {
+            txtPaket.ResetText();
         }
     }
 }

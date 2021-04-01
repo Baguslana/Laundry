@@ -35,7 +35,6 @@ namespace Laundry.MenuTab.FormPopup
                 if (Db.Insert("tb_paket", $"null, '{namaPaket}'"))
                 {
                     MessageBox.Show("Data Telah Ditambahkan!");
-                    btrf.PerformClick();
                     this.Hide();
                 }
                 else
@@ -51,6 +50,11 @@ namespace Laundry.MenuTab.FormPopup
         {
             if (txtJenisPaket.Text.Length > 0 ) return true;
             return false;
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

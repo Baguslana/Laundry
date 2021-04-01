@@ -45,7 +45,7 @@ namespace Laundry.MenuTab.FormPopup
             if (row >= 0)
             {
                 txtId.Text = dataTbPelanggan.Rows[row].Cells["ColumnId"].Value.ToString();
-                txtCari.Text = dataTbPelanggan.Rows[row].Cells["ColumnNama"].Value.ToString();
+                txtCari.Text = dataTbPelanggan.Rows[row].Cells["ColumnPelanggan"].Value.ToString();
                 this.Hide();
             }
             else MessageBox.Show("Anda Harus Pilih Pelanggan Terlebih Dahulu!", "PERHATIAN", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -64,7 +64,7 @@ namespace Laundry.MenuTab.FormPopup
             if (row >= 0)
             {
                 txtId.Text = dataTbPelanggan.Rows[row].Cells["ColumnId"].Value.ToString();
-                txtCari.Text = dataTbPelanggan.Rows[row].Cells["ColumnNama"].Value.ToString();
+                txtCari.Text = dataTbPelanggan.Rows[row].Cells["ColumnPelanggan"].Value.ToString();
                 this.Hide();
             }
             else MessageBox.Show("Anda Harus Pilih Pelanggan Terlebih Dahulu!", "PERHATIAN", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -82,6 +82,22 @@ namespace Laundry.MenuTab.FormPopup
         private void txtCariPelanggan_TextChanged(object sender, EventArgs e)
         {
             searchDataPelanggan();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Form AddPelanggan = new Form_AddPelanggan(btnRefresh);
+            AddPelanggan.ShowDialog();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            readDataPelanggan();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

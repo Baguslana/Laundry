@@ -100,12 +100,13 @@
             this.txtUsername.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtUsername.ForeColor = System.Drawing.Color.Black;
             this.txtUsername.Location = new System.Drawing.Point(62, 230);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(364, 30);
-            this.txtUsername.TabIndex = 1;
+            this.txtUsername.TabIndex = 10;
+            this.txtUsername.Text = "kasir";
             this.txtUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsername_KeyPress);
             // 
             // txtPassword
@@ -118,8 +119,8 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(364, 30);
-            this.txtPassword.TabIndex = 3;
-            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
+            this.txtPassword.TabIndex = 30;
+            this.txtPassword.Text = "kasir";
             // 
             // lblForgotPassword
             // 
@@ -133,6 +134,7 @@
             this.lblForgotPassword.Size = new System.Drawing.Size(130, 20);
             this.lblForgotPassword.TabIndex = 4;
             this.lblForgotPassword.Text = "Forgot Password";
+            this.lblForgotPassword.Visible = false;
             // 
             // btnLogin
             // 

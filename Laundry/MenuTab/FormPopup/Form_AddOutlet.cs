@@ -62,5 +62,10 @@ namespace Laundry.MenuTab.FormPopup
                 e.Handled = true;
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

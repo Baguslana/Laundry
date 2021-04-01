@@ -32,11 +32,23 @@ namespace Laundry
                 }
                 else
                 {
-                    MessageBox.Show("Username atau password salah", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtPassword.Focus();
+                    /*MessageBox.Show("Username atau password salah", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtPassword.Focus();*/
+
+                    if (Auth.Login($"SELECT * FROM tb_user WHERE username='{txtUsername.Text}'"))
+                    {
+                        MessageBox.Show("Password salah!");
+                        txtPassword.ResetText();
+                        txtPassword.Focus();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Username tidak terdaftar!");
+                        resetTextBox();
+                    }
                 }
             }
-            else if (txtUsername.Text.Length == 0 && txtPassword.Text.Length == 0) MessageBox.Show("Masukan username dan password", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            /*else if (txtUsername.Text.Length == 0 && txtPassword.Text.Length == 0) MessageBox.Show("Masukan username dan password", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (txtUsername.Text.Length == 0)
             {
                 MessageBox.Show("Masukan username", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -46,20 +58,19 @@ namespace Laundry
             {
                 MessageBox.Show("Masukan password", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtPassword.Focus();
-            }
+                txtPassword.ResetText();
+            }*/
+        }
+
+        private void resetTextBox()
+        {
+            txtUsername.ResetText();
+            txtPassword.ResetText();
         }
 
         private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.KeyChar = Char.ToLower(e.KeyChar);
-        }
-
-        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btnLogin.PerformClick();
-            }
         }
     }
 }

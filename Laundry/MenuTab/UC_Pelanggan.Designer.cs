@@ -161,6 +161,7 @@
             // 
             this.btnAdd.AnimationHoverSpeed = 0.07F;
             this.btnAdd.AnimationSpeed = 0.03F;
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
             this.btnAdd.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnAdd.BorderColor = System.Drawing.Color.Black;
             this.btnAdd.CheckedBaseColor = System.Drawing.Color.Gray;
@@ -183,9 +184,11 @@
             this.btnAdd.OnHoverImage = null;
             this.btnAdd.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnAdd.OnPressedColor = System.Drawing.Color.Black;
+            this.btnAdd.Radius = 5;
             this.btnAdd.Size = new System.Drawing.Size(121, 42);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Tambah";
+            this.btnAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // panel1
@@ -199,6 +202,7 @@
             // 
             this.btnEdit.AnimationHoverSpeed = 0.07F;
             this.btnEdit.AnimationSpeed = 0.03F;
+            this.btnEdit.BackColor = System.Drawing.Color.Transparent;
             this.btnEdit.BaseColor = System.Drawing.Color.Gold;
             this.btnEdit.BorderColor = System.Drawing.Color.Black;
             this.btnEdit.CheckedBaseColor = System.Drawing.Color.Gray;
@@ -221,15 +225,18 @@
             this.btnEdit.OnHoverImage = null;
             this.btnEdit.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnEdit.OnPressedColor = System.Drawing.Color.Black;
+            this.btnEdit.Radius = 5;
             this.btnEdit.Size = new System.Drawing.Size(121, 42);
             this.btnEdit.TabIndex = 4;
             this.btnEdit.Text = "Edit";
+            this.btnEdit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.AnimationHoverSpeed = 0.07F;
             this.btnDelete.AnimationSpeed = 0.03F;
+            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
             this.btnDelete.BaseColor = System.Drawing.Color.Crimson;
             this.btnDelete.BorderColor = System.Drawing.Color.Black;
             this.btnDelete.CheckedBaseColor = System.Drawing.Color.Gray;
@@ -252,9 +259,11 @@
             this.btnDelete.OnHoverImage = null;
             this.btnDelete.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnDelete.OnPressedColor = System.Drawing.Color.Black;
+            this.btnDelete.Radius = 5;
             this.btnDelete.Size = new System.Drawing.Size(121, 42);
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "Hapus";
+            this.btnDelete.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnRefresh
@@ -289,7 +298,7 @@
             this.btnRefresh.Visible = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // UC_Member
+            // UC_Pelanggan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -299,7 +308,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dataTbMember);
-            this.Name = "UC_Member";
+            this.Name = "UC_Pelanggan";
             this.Size = new System.Drawing.Size(1022, 673);
             this.Load += new System.EventHandler(this.UC_Member_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataTbMember)).EndInit();
