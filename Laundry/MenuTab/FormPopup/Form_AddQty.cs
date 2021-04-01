@@ -71,8 +71,7 @@ namespace Laundry.Properties
 {
     class Resources
     {
-        internal static Image left_arrow_50px;
-        internal static Image checkmark_50px;
+        
 
         public static Image exit_50px { get; internal set; }
         public static Image registration_50px { get; internal set; }

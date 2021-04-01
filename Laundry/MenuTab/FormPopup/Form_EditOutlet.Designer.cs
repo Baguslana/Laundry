@@ -242,6 +242,7 @@
             this.Controls.Add(this.panelsamping);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_EditOutlet";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form_EditUser";
             this.Load += new System.EventHandler(this.Form_EditOutlet_Load);
             this.ResumeLayout(false);

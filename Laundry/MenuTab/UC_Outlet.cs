@@ -28,7 +28,7 @@ namespace Laundry.MenuTab
 
         private void readDataOutlet()
         {
-            string query = "SELECT * FROM tb_outlet";
+            string query = "SELECT * FROM tb_outlet WHERE id != 10";
             DataTable data = Db.Read(query);
             dataTbOutlet.AutoGenerateColumns = false;
             dataTbOutlet.DataSource = data;
@@ -37,7 +37,7 @@ namespace Laundry.MenuTab
         private void dataTbOutlet_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int row = dataTbOutlet.CurrentCell.RowIndex;
-            getIdOutlet = dataTbOutlet.Rows[row].Cells["ColumnId"].Value.ToString();
+            getIdOutlet = dataTbOutlet.Rows[row].Cells["KolomId"].Value.ToString();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -79,6 +79,34 @@ namespace Laundry.MenuTab
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             readDataOutlet();
+        }
+
+        private void gunaTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            string query = $"SELECT * FROM tb_outlet WHERE CONCAT(nama, alamat, tlp) LIKE '%{txtSearch.Text}%' AND id != 10";
+            DataTable data = Db.Read(query);
+            dataTbOutlet.AutoGenerateColumns = false;
+            dataTbOutlet.DataSource = data;
+        }
+
+        private void gunaTextBox1_Enter(object sender, EventArgs e)
+        {
+            txtSearch.ResetText();
+        }
+
+        private void gunaTextBox1_Leave(object sender, EventArgs e)
+        {
+            if (txtSearch.Text.Length >= 0)
+            {
+                txtSearch.ForeColor = Color.Black;
+            }
+
+            if (txtSearch.Text.Length <= 0)
+            {
+                txtSearch.Text = "Search . . .";
+                txtSearch.ForeColor = Color.Gray;
+                readDataOutlet();
+            } 
         }
     }
 }

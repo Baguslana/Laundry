@@ -24,7 +24,7 @@ namespace Laundry.MenuTab.FormPopup
 
         private void Form_AddPelanggan_Load(object sender, EventArgs e)
         {
-
+            txtJenisKelamin.Text = "L";
         }
 
         private void btnTambah_Click(object sender, EventArgs e)

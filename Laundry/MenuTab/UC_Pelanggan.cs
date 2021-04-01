@@ -80,5 +80,33 @@ namespace Laundry.MenuTab
         {
             readDataMember();
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string query = $"SELECT* FROM tb_member WHERE CONCAT(nama, alamat, tlp) LIKE '%{txtSearch.Text}%'";
+            DataTable data = Db.Read(query);
+            dataTbMember.AutoGenerateColumns = false;
+            dataTbMember.DataSource = data;
+        }
+
+        private void txtSearch_Enter(object sender, EventArgs e)
+        {
+            txtSearch.ResetText();
+        }
+
+        private void txtSearch_Leave(object sender, EventArgs e)
+        {
+            if (txtSearch.Text.Length >= 0)
+            {
+                txtSearch.ForeColor = Color.Black;
+            }
+
+            if (txtSearch.Text.Length <= 0)
+            {
+                txtSearch.Text = "Search . . .";
+                txtSearch.ForeColor = Color.Gray;
+                readDataMember();
+            }
+        }
     }
 }

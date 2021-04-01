@@ -80,6 +80,34 @@ namespace Laundry.MenuTab
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             readDataUser();
-        }  
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string query = $"SELECT tb_user.*, tb_outlet.nama as namaOutlet FROM tb_user LEFT JOIN tb_outlet ON tb_user.id_outlet = tb_outlet.id WHERE CONCAT(tb_user.nama, username, level, tb_outlet.nama) LIKE '%{txtSearch.Text}%'";
+            DataTable data = Db.Read(query);
+            dataTbUser.AutoGenerateColumns = false;
+            dataTbUser.DataSource = data;
+        }
+
+        private void txtSearch_Enter(object sender, EventArgs e)
+        {
+            txtSearch.ResetText();
+        }
+
+        private void txtSearch_Leave(object sender, EventArgs e)
+        {
+            if (txtSearch.Text.Length >= 0)
+            {
+                txtSearch.ForeColor = Color.Black;
+            }
+
+            if (txtSearch.Text.Length <= 0)
+            {
+                txtSearch.Text = "Search . . .";
+                txtSearch.ForeColor = Color.Gray;
+                readDataUser();
+            }
+        }
     }
 }

@@ -47,8 +47,6 @@ namespace Laundry.MenuTab
                 id_outlet = Session.getUserLogged().Rows[0].Field<int>("id_outlet");
             }
             id_user = Session.getUserLogged().Rows[0].Field<int>("id");
-
-            //lblNama.Text = Session.getUserLogged().Rows[0].Field<string>("nama");
             loadItems();
             //this.KeyPreview = true;
         }
@@ -70,8 +68,8 @@ namespace Laundry.MenuTab
                     Width = 128,
                     Height = 100,
                     Text = row.Field<string>("nama_paket"),
-                    Font = new Font(new FontFamily("Calibri"), 9)
-                    //Radius = 8
+                    Font = new Font(new FontFamily("Calibri"), 9),
+                    Radius = 8
 
                 };
                 item.Click += new EventHandler(functionItems);
@@ -142,6 +140,11 @@ namespace Laundry.MenuTab
             {
                 e.Handled = true;
             }
+        }
+
+        private void btnPilihPaket_Click(object sender, EventArgs e)
+        {
+            txtPaket.ResetText();
         }
 
         private void searchDataPaket(string keyword)
@@ -330,11 +333,6 @@ namespace Laundry.MenuTab
                     MessageBox.Show("Transaksi Telah Ditambahkan", "PEMBERITAHUAN", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-        }
-
-        private void btnPilihPaket_Click(object sender, EventArgs e)
-        {
-            txtPaket.ResetText();
         }
     }
 }

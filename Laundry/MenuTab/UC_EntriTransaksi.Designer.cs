@@ -440,7 +440,8 @@
             this.btnBiayaTambahan.OnPressedColor = System.Drawing.Color.Black;
             this.btnBiayaTambahan.Size = new System.Drawing.Size(32, 32);
             this.btnBiayaTambahan.TabIndex = 22;
-            this.btnBiayaTambahan.Text = "%";
+            this.btnBiayaTambahan.Text = ",00";
+            this.btnBiayaTambahan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnPajak
             // 
@@ -525,7 +526,7 @@
             this.btnCariPelanggan.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnCariPelanggan.Location = new System.Drawing.Point(280, 62);
             this.btnCariPelanggan.Name = "btnCariPelanggan";
-            this.btnCariPelanggan.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnCariPelanggan.OnHoverBaseColor = System.Drawing.Color.LightGreen;
             this.btnCariPelanggan.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnCariPelanggan.OnHoverForeColor = System.Drawing.Color.White;
             this.btnCariPelanggan.OnHoverImage = null;
@@ -618,6 +619,7 @@
             this.txtPelanggan.BaseColor = System.Drawing.Color.White;
             this.txtPelanggan.BorderColor = System.Drawing.Color.Silver;
             this.txtPelanggan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPelanggan.Enabled = false;
             this.txtPelanggan.FocusedBaseColor = System.Drawing.Color.White;
             this.txtPelanggan.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtPelanggan.FocusedForeColor = System.Drawing.SystemColors.ControlText;

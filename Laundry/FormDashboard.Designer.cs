@@ -89,7 +89,7 @@
             this.gunaAdvenceButton8.FocusedColor = System.Drawing.Color.Empty;
             this.gunaAdvenceButton8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaAdvenceButton8.ForeColor = System.Drawing.Color.White;
-             this.gunaAdvenceButton8.Image = null;
+            this.gunaAdvenceButton8.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton8.Image")));
             this.gunaAdvenceButton8.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton8.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.gunaAdvenceButton8.Location = new System.Drawing.Point(149, 21);
@@ -132,13 +132,13 @@
             this.btnMember.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnMember.CheckedBorderColor = System.Drawing.Color.Transparent;
             this.btnMember.CheckedForeColor = System.Drawing.Color.White;
-            this.btnMember.CheckedImage = null;
+            this.btnMember.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnMember.CheckedImage")));
             this.btnMember.CheckedLineColor = System.Drawing.Color.White;
             this.btnMember.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnMember.FocusedColor = System.Drawing.Color.Empty;
             this.btnMember.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnMember.ForeColor = System.Drawing.Color.White;
-            this.btnMember.Image = null;
+            this.btnMember.Image = ((System.Drawing.Image)(resources.GetObject("btnMember.Image")));
             this.btnMember.ImageSize = new System.Drawing.Size(20, 20);
             this.btnMember.LineColor = System.Drawing.Color.Transparent;
             this.btnMember.LineLeft = 5;
@@ -165,13 +165,13 @@
             this.btnOutlet.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnOutlet.CheckedBorderColor = System.Drawing.Color.Transparent;
             this.btnOutlet.CheckedForeColor = System.Drawing.Color.White;
-            this.btnOutlet.CheckedImage = null;
+            this.btnOutlet.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnOutlet.CheckedImage")));
             this.btnOutlet.CheckedLineColor = System.Drawing.Color.White;
             this.btnOutlet.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnOutlet.FocusedColor = System.Drawing.Color.Empty;
             this.btnOutlet.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnOutlet.ForeColor = System.Drawing.Color.White;
-            this.btnOutlet.Image = null;
+            this.btnOutlet.Image = ((System.Drawing.Image)(resources.GetObject("btnOutlet.Image")));
             this.btnOutlet.ImageSize = new System.Drawing.Size(20, 20);
             this.btnOutlet.LineColor = System.Drawing.Color.Transparent;
             this.btnOutlet.LineLeft = 5;
@@ -198,13 +198,13 @@
             this.btnPaket.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnPaket.CheckedBorderColor = System.Drawing.Color.Transparent;
             this.btnPaket.CheckedForeColor = System.Drawing.Color.White;
-            this.btnPaket.CheckedImage = null;
+            this.btnPaket.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnPaket.CheckedImage")));
             this.btnPaket.CheckedLineColor = System.Drawing.Color.White;
             this.btnPaket.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnPaket.FocusedColor = System.Drawing.Color.Empty;
             this.btnPaket.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnPaket.ForeColor = System.Drawing.Color.White;
-            this.btnPaket.Image = null;
+            this.btnPaket.Image = ((System.Drawing.Image)(resources.GetObject("btnPaket.Image")));
             this.btnPaket.ImageSize = new System.Drawing.Size(20, 20);
             this.btnPaket.LineColor = System.Drawing.Color.Transparent;
             this.btnPaket.LineLeft = 5;
@@ -231,13 +231,13 @@
             this.btnPengguna.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnPengguna.CheckedBorderColor = System.Drawing.Color.Transparent;
             this.btnPengguna.CheckedForeColor = System.Drawing.Color.White;
-            this.btnPengguna.CheckedImage = null;
+            this.btnPengguna.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnPengguna.CheckedImage")));
             this.btnPengguna.CheckedLineColor = System.Drawing.Color.White;
             this.btnPengguna.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnPengguna.FocusedColor = System.Drawing.Color.Empty;
             this.btnPengguna.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnPengguna.ForeColor = System.Drawing.Color.White;
-            this.btnPengguna.Image = null;
+            this.btnPengguna.Image = ((System.Drawing.Image)(resources.GetObject("btnPengguna.Image")));
             this.btnPengguna.ImageSize = new System.Drawing.Size(20, 20);
             this.btnPengguna.LineColor = System.Drawing.Color.Transparent;
             this.btnPengguna.LineLeft = 5;
@@ -264,13 +264,13 @@
             this.btnEntriTransaksi.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnEntriTransaksi.CheckedBorderColor = System.Drawing.Color.Transparent;
             this.btnEntriTransaksi.CheckedForeColor = System.Drawing.Color.White;
-            this.btnEntriTransaksi.CheckedImage = null;
+            this.btnEntriTransaksi.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnEntriTransaksi.CheckedImage")));
             this.btnEntriTransaksi.CheckedLineColor = System.Drawing.Color.White;
             this.btnEntriTransaksi.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEntriTransaksi.FocusedColor = System.Drawing.Color.Empty;
             this.btnEntriTransaksi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnEntriTransaksi.ForeColor = System.Drawing.Color.White;
-            this.btnEntriTransaksi.Image = null;
+            this.btnEntriTransaksi.Image = ((System.Drawing.Image)(resources.GetObject("btnEntriTransaksi.Image")));
             this.btnEntriTransaksi.ImageSize = new System.Drawing.Size(20, 20);
             this.btnEntriTransaksi.LineColor = System.Drawing.Color.Transparent;
             this.btnEntriTransaksi.LineLeft = 5;
@@ -297,13 +297,13 @@
             this.btnDataTransaksi.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnDataTransaksi.CheckedBorderColor = System.Drawing.Color.Transparent;
             this.btnDataTransaksi.CheckedForeColor = System.Drawing.Color.White;
-            this.btnDataTransaksi.CheckedImage = null;
+            this.btnDataTransaksi.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnDataTransaksi.CheckedImage")));
             this.btnDataTransaksi.CheckedLineColor = System.Drawing.Color.White;
             this.btnDataTransaksi.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDataTransaksi.FocusedColor = System.Drawing.Color.Empty;
             this.btnDataTransaksi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDataTransaksi.ForeColor = System.Drawing.Color.White;
-            this.btnDataTransaksi.Image = null;
+            this.btnDataTransaksi.Image = ((System.Drawing.Image)(resources.GetObject("btnDataTransaksi.Image")));
             this.btnDataTransaksi.ImageSize = new System.Drawing.Size(20, 20);
             this.btnDataTransaksi.LineColor = System.Drawing.Color.Transparent;
             this.btnDataTransaksi.LineLeft = 5;
@@ -330,13 +330,13 @@
             this.btnLaporan.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnLaporan.CheckedBorderColor = System.Drawing.Color.Transparent;
             this.btnLaporan.CheckedForeColor = System.Drawing.Color.White;
-            this.btnLaporan.CheckedImage = null;
+            this.btnLaporan.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnLaporan.CheckedImage")));
             this.btnLaporan.CheckedLineColor = System.Drawing.Color.White;
             this.btnLaporan.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLaporan.FocusedColor = System.Drawing.Color.Empty;
             this.btnLaporan.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnLaporan.ForeColor = System.Drawing.Color.White;
-            this.btnLaporan.Image = null;
+            this.btnLaporan.Image = ((System.Drawing.Image)(resources.GetObject("btnLaporan.Image")));
             this.btnLaporan.ImageSize = new System.Drawing.Size(20, 20);
             this.btnLaporan.LineColor = System.Drawing.Color.Transparent;
             this.btnLaporan.LineLeft = 5;
@@ -392,7 +392,7 @@
             this.PanelMenu.Location = new System.Drawing.Point(240, 0);
             this.PanelMenu.Name = "PanelMenu";
             this.PanelMenu.Size = new System.Drawing.Size(1022, 673);
-            this.PanelMenu.TabIndex = 1;
+            this.PanelMenu.TabIndex = 2;
             // 
             // FormDashboard
             // 
@@ -425,13 +425,13 @@
         private Guna.UI.WinForms.GunaAdvenceButton btnPengguna;
         private System.Windows.Forms.Panel panel4;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
-        private Guna.UI.WinForms.GunaPanel PanelMenu;
         private Guna.UI.WinForms.GunaAdvenceButton btnMember;
         private Guna.UI.WinForms.GunaAdvenceButton btnOutlet;
         private Guna.UI.WinForms.GunaAdvenceButton btnPaket;
         private Guna.UI.WinForms.GunaAdvenceButton btnEntriTransaksi;
         private Guna.UI.WinForms.GunaAdvenceButton btnLaporan;
         private Guna.UI.WinForms.GunaAdvenceButton btnDataTransaksi;
+        private Guna.UI.WinForms.GunaPanel PanelMenu;
     }
 }
 

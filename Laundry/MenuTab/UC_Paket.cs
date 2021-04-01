@@ -28,7 +28,7 @@ namespace Laundry.MenuTab
 
         private void readDataPaket()
         {
-            string query = "SELECT * FROM tb_paket LEFT JOIN tb_jenis ON tb_paket.id_jenis = tb_jenis.id LEFT JOIN tb_outlet ON tb_paket.id_outlet = tb_outlet.id ORDER BY tb_paket.id DESC";
+            string query = "SELECT * FROM tb_paket LEFT JOIN tb_jenis ON tb_paket.id_jenis = tb_jenis.id LEFT JOIN tb_outlet ON tb_paket.id_outlet = tb_outlet.id ORDER BY tb_outlet.id DESC";
             DataTable data = Db.Read(query);
             dataTbPaket.AutoGenerateColumns = false;
             dataTbPaket.DataSource = data;
@@ -85,9 +85,38 @@ namespace Laundry.MenuTab
             readDataPaket();
         }
 
-        private void gunaAdvenceButton1_Click(object sender, EventArgs e)
+        private void btnJenisPaket_Click(object sender, EventArgs e)
         {
             new Form_JenisPaket().ShowDialog();
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM tb_paket LEFT JOIN tb_jenis ON tb_paket.id_jenis = tb_jenis.id LEFT JOIN tb_outlet ON tb_paket.id_outlet = tb_outlet.id WHERE tb_paket.nama_paket LIKE '%" + txtSearch.Text + "%'" +
+                           "OR tb_paket.harga LIKE '%" + txtSearch.Text + "%' OR tb_outlet.nama LIKE '%" + txtSearch.Text + "%' OR tb_jenis.jenis LIKE '%" + txtSearch.Text + "%'";
+            DataTable data = Db.Read(query);
+            dataTbPaket.AutoGenerateColumns = false;
+            dataTbPaket.DataSource = data;
+        }
+
+        private void txtSearch_Enter(object sender, EventArgs e)
+        {
+            txtSearch.ResetText();
+        }
+
+        private void txtSearch_Leave(object sender, EventArgs e)
+        {
+            if (txtSearch.Text.Length >= 0)
+            {
+                txtSearch.ForeColor = Color.Black;
+            }
+
+            if (txtSearch.Text.Length <= 0)
+            {
+                txtSearch.Text = "Search . . .";
+                txtSearch.ForeColor = Color.Gray;
+                readDataPaket();
+            }
         }
     }
 }

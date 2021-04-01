@@ -252,7 +252,6 @@
             this.txtJenisKelamin.PasswordChar = '\0';
             this.txtJenisKelamin.Size = new System.Drawing.Size(99, 28);
             this.txtJenisKelamin.TabIndex = 40;
-            this.txtJenisKelamin.Text = "gunaTextBox1";
             this.txtJenisKelamin.Visible = false;
             // 
             // btnBack
