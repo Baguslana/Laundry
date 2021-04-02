@@ -237,7 +237,7 @@
             this.btnBack.ImageSize = new System.Drawing.Size(20, 20);
             this.btnBack.Location = new System.Drawing.Point(0, 0);
             this.btnBack.Name = "btnBack";
-            this.btnBack.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnBack.OnHoverBaseColor = System.Drawing.Color.Khaki;
             this.btnBack.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnBack.OnHoverForeColor = System.Drawing.Color.White;
             this.btnBack.OnHoverImage = null;
@@ -268,7 +268,7 @@
             this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.gunaAdvenceButton1.Location = new System.Drawing.Point(259, 451);
             this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
-            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.Khaki;
             this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaAdvenceButton1.OnHoverImage = null;

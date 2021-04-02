@@ -215,7 +215,7 @@
             this.btnEdit.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnEdit.Location = new System.Drawing.Point(259, 451);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnEdit.OnHoverBaseColor = System.Drawing.Color.Khaki;
             this.btnEdit.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnEdit.OnHoverForeColor = System.Drawing.Color.White;
             this.btnEdit.OnHoverImage = null;
@@ -243,7 +243,7 @@
             this.btnIcon.ImageSize = new System.Drawing.Size(20, 20);
             this.btnIcon.Location = new System.Drawing.Point(37, 356);
             this.btnIcon.Name = "btnIcon";
-            this.btnIcon.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnIcon.OnHoverBaseColor = System.Drawing.Color.Khaki;
             this.btnIcon.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnIcon.OnHoverForeColor = System.Drawing.Color.White;
             this.btnIcon.OnHoverImage = null;
@@ -278,7 +278,7 @@
             this.btnBack.ImageSize = new System.Drawing.Size(20, 20);
             this.btnBack.Location = new System.Drawing.Point(0, 0);
             this.btnBack.Name = "btnBack";
-            this.btnBack.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnBack.OnHoverBaseColor = System.Drawing.Color.Khaki;
             this.btnBack.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnBack.OnHoverForeColor = System.Drawing.Color.White;
             this.btnBack.OnHoverImage = null;

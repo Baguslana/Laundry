@@ -276,7 +276,7 @@
             this.btnAdd.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnAdd.Location = new System.Drawing.Point(31, 472);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnAdd.OnHoverBaseColor = System.Drawing.Color.LightGreen;
             this.btnAdd.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnAdd.OnHoverForeColor = System.Drawing.Color.White;
             this.btnAdd.OnHoverImage = null;

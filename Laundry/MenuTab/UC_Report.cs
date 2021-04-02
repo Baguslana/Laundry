@@ -14,6 +14,7 @@ namespace Laundry.MenuTab
     public partial class UC_Report : UserControl
     {
         string id_outlet;
+
         public UC_Report()
         {
             InitializeComponent();
@@ -21,13 +22,25 @@ namespace Laundry.MenuTab
 
         private void UC_Report_Load(object sender, EventArgs e)
         {
-            id_outlet = Session.getUserLogged().Rows[0].Field<int>("id_outlet").ToString();
+            //id_outlet = Session.getUserLogged().Rows[0].Field<int>("id_outlet").ToString();
+
+            cmbOutlet.DataSource = Db.Read("tb_outlet WHERE id != 10", "id, nama");
+            cmbOutlet.DisplayMember = "nama";
+            cmbOutlet.ValueMember = "id";
+            cmbOutlet.SelectedIndex = -1;
+
+            if (Session.getUserLogged().Rows[0].Field<string>("level") != "admin")
+            {
+                cmbOutlet.SelectedValue = Session.getUserLogged().Rows[0].Field<int>("id_outlet").ToString();
+                cmbOutlet.Enabled = false;
+                id_outlet = Session.getUserLogged().Rows[0].Field<int>("id_outlet").ToString();
+            }
         }
 
         private void btnTampilkan_Click(object sender, EventArgs e)
         {
             //DataTable data = Db.Read($"SELECT DISTINCT(tb_transaksi.kode_invoice),tb_member.nama, tb_transaksi.total_pembayaran, tb_transaksi.tgl, tb_transaksi.batas_waktu, tb_transaksi.status, tb_transaksi.dibayar, tb_user.nama FROM tb_transaksi JOIN tb_member ON tb_transaksi.id_member = tb_member.id JOIN tb_user ON tb_transaksi.id_user = tb_user.id WHERE tb_transaksi.id_outlet='{id_outlet}' AND tgl_bayar BETWEEN '{dtpDari.Value.ToString("yyyy/MM/dd")}' AND '{dtpSampai.Value.ToString("yyyy/MM/dd")}' ORDER BY tgl DESC");
-            DataTable data = Db.Read($"SELECT DISTINCT(tb_transaksi.kode_invoice),tb_member.nama, tb_transaksi.total_pembayaran, tb_transaksi.tgl, tb_transaksi.batas_waktu, tb_transaksi.status, tb_transaksi.dibayar, tb_user.nama FROM tb_transaksi JOIN tb_member ON tb_transaksi.id_member = tb_member.id JOIN tb_user ON tb_transaksi.id_user = tb_user.id WHERE tb_transaksi.id_outlet='{id_outlet}' AND tgl BETWEEN '{dtpDari.Value.ToString("yyyy/MM/dd")}' AND '{dtpSampai.Value.ToString("yyyy/MM/dd")}' ORDER BY tgl DESC");
+            DataTable data = Db.Read($"SELECT DISTINCT(tb_transaksi.kode_invoice),tb_member.nama, tb_transaksi.total_pembayaran, tb_transaksi.tgl, tb_transaksi.batas_waktu, tb_transaksi.status, tb_transaksi.dibayar, tb_user.nama FROM tb_transaksi JOIN tb_member ON tb_transaksi.id_member = tb_member.id JOIN tb_user ON tb_transaksi.id_user = tb_user.id WHERE tb_transaksi.id_outlet='{cmbOutlet.SelectedValue}' AND tgl BETWEEN '{dtpDari.Value.ToString("yyyy/MM/dd")}' AND '{dtpSampai.Value.ToString("yyyy/MM/dd")}' ORDER BY tgl DESC");
             Reporting.DataSet1 laporan = new Reporting.DataSet1();
             //MessageBox.Show(data.Rows.Count.ToString());
             foreach (DataRow row in data.Rows)

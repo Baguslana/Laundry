@@ -31,8 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_EntriTransaksi));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.flPaket = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -68,11 +69,6 @@
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataTableEntriTransaksi = new Guna.UI.WinForms.GunaDataGridView();
-            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnPaket = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnHarga = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnAction = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -89,6 +85,11 @@
             this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
             this.txtIdPelanggan = new Guna.UI.WinForms.GunaTextBox();
             this.btnTambah = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnPaket = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnHarga = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnAction = new System.Windows.Forms.DataGridViewLinkColumn();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.gunaGroupBox2.SuspendLayout();
@@ -699,27 +700,27 @@
             this.ColumnQty,
             this.ColumnHarga,
             this.ColumnAction});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataTableEntriTransaksi.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataTableEntriTransaksi.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataTableEntriTransaksi.EnableHeadersVisualStyles = false;
             this.dataTableEntriTransaksi.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataTableEntriTransaksi.Location = new System.Drawing.Point(3, 48);
             this.dataTableEntriTransaksi.Name = "dataTableEntriTransaksi";
             this.dataTableEntriTransaksi.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataTableEntriTransaksi.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataTableEntriTransaksi.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataTableEntriTransaksi.RowHeadersVisible = false;
             this.dataTableEntriTransaksi.RowHeadersWidth = 51;
             this.dataTableEntriTransaksi.RowTemplate.Height = 24;
@@ -751,42 +752,6 @@
             this.dataTableEntriTransaksi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTableEntriTransaksi_CellContentClick);
             this.dataTableEntriTransaksi.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataTableEntriTransaksi_RowsAdded);
             this.dataTableEntriTransaksi.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dataTableEntriTransaksi_RowsRemoved);
-            // 
-            // ColumnId
-            // 
-            this.ColumnId.HeaderText = "Id";
-            this.ColumnId.MinimumWidth = 6;
-            this.ColumnId.Name = "ColumnId";
-            this.ColumnId.ReadOnly = true;
-            this.ColumnId.Visible = false;
-            // 
-            // ColumnPaket
-            // 
-            this.ColumnPaket.HeaderText = "Paket";
-            this.ColumnPaket.MinimumWidth = 6;
-            this.ColumnPaket.Name = "ColumnPaket";
-            this.ColumnPaket.ReadOnly = true;
-            // 
-            // ColumnQty
-            // 
-            this.ColumnQty.HeaderText = "Quantity";
-            this.ColumnQty.MinimumWidth = 6;
-            this.ColumnQty.Name = "ColumnQty";
-            this.ColumnQty.ReadOnly = true;
-            // 
-            // ColumnHarga
-            // 
-            this.ColumnHarga.HeaderText = "Harga";
-            this.ColumnHarga.MinimumWidth = 6;
-            this.ColumnHarga.Name = "ColumnHarga";
-            this.ColumnHarga.ReadOnly = true;
-            // 
-            // ColumnAction
-            // 
-            this.ColumnAction.HeaderText = "Action";
-            this.ColumnAction.MinimumWidth = 6;
-            this.ColumnAction.Name = "ColumnAction";
-            this.ColumnAction.ReadOnly = true;
             // 
             // gunaButton3
             // 
@@ -1038,6 +1003,49 @@
             this.btnTambah.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
             // 
+            // ColumnId
+            // 
+            this.ColumnId.HeaderText = "Id";
+            this.ColumnId.MinimumWidth = 6;
+            this.ColumnId.Name = "ColumnId";
+            this.ColumnId.ReadOnly = true;
+            this.ColumnId.Visible = false;
+            // 
+            // ColumnPaket
+            // 
+            this.ColumnPaket.HeaderText = "Paket";
+            this.ColumnPaket.MinimumWidth = 6;
+            this.ColumnPaket.Name = "ColumnPaket";
+            this.ColumnPaket.ReadOnly = true;
+            // 
+            // ColumnQty
+            // 
+            this.ColumnQty.HeaderText = "Quantity";
+            this.ColumnQty.MinimumWidth = 6;
+            this.ColumnQty.Name = "ColumnQty";
+            this.ColumnQty.ReadOnly = true;
+            // 
+            // ColumnHarga
+            // 
+            this.ColumnHarga.HeaderText = "Harga";
+            this.ColumnHarga.MinimumWidth = 6;
+            this.ColumnHarga.Name = "ColumnHarga";
+            this.ColumnHarga.ReadOnly = true;
+            // 
+            // ColumnAction
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ColumnAction.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ColumnAction.HeaderText = "Action";
+            this.ColumnAction.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.ColumnAction.LinkColor = System.Drawing.Color.Red;
+            this.ColumnAction.MinimumWidth = 6;
+            this.ColumnAction.Name = "ColumnAction";
+            this.ColumnAction.ReadOnly = true;
+            this.ColumnAction.Text = "X";
+            this.ColumnAction.UseColumnTextForLinkValue = true;
+            this.ColumnAction.VisitedLinkColor = System.Drawing.Color.Red;
+            // 
             // UC_EntriTransaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1123,11 +1131,11 @@
         private Guna.UI.WinForms.GunaAdvenceButton btnPajak;
         private Guna.UI.WinForms.GunaAdvenceButton btnDiskon;
         private Guna.UI.WinForms.GunaAdvenceButton btnTambah;
+        private Guna.UI.WinForms.GunaAdvenceButton btnCariPelanggan;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPaket;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnQty;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnHarga;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnAction;
-        private Guna.UI.WinForms.GunaAdvenceButton btnCariPelanggan;
+        private System.Windows.Forms.DataGridViewLinkColumn ColumnAction;
     }
 }
